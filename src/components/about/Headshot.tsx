@@ -2,11 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 function Headshot() {
   return (
-    <div>
+    <div className='h-fit w-fit rounded-full overflow-hidden'>
       <Image
-        height={100}
-        width={100}
-        src={'/vercel.svg'}
+        height={300}
+        width={300}
+        src={'/assets/rohit.jpg'}
         alt='headshot of rohit'
         aria-label='headshot of rohit'
       />

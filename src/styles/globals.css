@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+h1 {
+  font-size: xx-large;
+  color: rgb(121, 202, 229);
+}
+html {
+  scroll-behavior: smooth;
+}
