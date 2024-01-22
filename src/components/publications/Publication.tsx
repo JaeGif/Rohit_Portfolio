@@ -9,7 +9,7 @@ type PublicationProps = {
 
 function Publication({ data }: PublicationProps) {
   return (
-    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white rounded-lg text-black'>
+    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white rounded-lg text-black gap-10'>
       <span className='flex flex-col'>
         <h2 className='text-xl pr-2'>{data.title}</h2>
         <p>
@@ -22,7 +22,8 @@ function Publication({ data }: PublicationProps) {
         )}
         {data.summary && (
           <div>
-            <h3>Summary</h3>
+            <h3 className='text-lg text-blue-500'>Summary</h3>
+            <p className='max-h-60 overflow-scroll'>{data.summary}</p>
           </div>
         )}
         {data.type === 'Work in Progress' && (

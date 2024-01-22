@@ -133,7 +133,7 @@
       "year": 2017,
       "reviewed": false,
       "type": "Abstract",
-      "summary": ""
+      "summary": null
     },
     {
       "title": "The Use of Eye Metrics to Index Cognitive Workload in Video Games.",
@@ -142,7 +142,7 @@
       "year": 2016,
       "reviewed": false,
       "type": "Abstract",
-      "summary": ""
+      "summary": null
     },
     {
       "title": "Correlations Between Tetris Fall Speeds and Eye Movement.",
@@ -151,7 +151,7 @@
       "year": 2015,
       "reviewed": false,
       "type": "Abstract",
-      "summary": ""
+      "summary": null
     },
     {
       "title": "Insights towards the development of Soldier-Centered AI Teammates for Acceptance and Improved Team Effectiveness within the Army.",
