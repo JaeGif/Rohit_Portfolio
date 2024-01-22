@@ -1,0 +1,184 @@
+{
+  "publications": [
+    {
+      "title": "The Pursuit of Happiness: The Power and Influence of AI Teammate Emotion in Human-AI Teamwork.",
+      "publisher": "Behaviour & Information Technology",
+      "src": "https://doi.org/10.1080/0144929X.2023.2277909",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Journal",
+      "summary": "As the world evolves, human-AI teams (HAT) have become increasingly more capable in their ability to complete task objectives. Due to this rising importance, it has become essential to understand the interpersonal dynamism between humans and AI to further optimise their performance potential. Given the demonstrated utility of emotional communication within human-human team structures, this research investigates the nature of AI-sourced positive emotions on human teammates. Through 47 interviews, our findings show that for these AI teammates to be accepted, human teammates have preferences on understanding the emotional utility prior to its presentation, as well as which emotions are situationally acceptable. Also, findings show that integrating emotions within AI teammates has a positive influence on human perceptions and behaviour in a task. In further detail, emotions act as status updates that allow human teammates to not only better understand their teammates' mental states but also understand how their AI teammates perceive the situation around them. Together, this gives insight into how AI emotional expressions influence the perception of social support on the wider Human-AI team. Mainly how emotions can be used to increase acceptance of AI teammates and improve the overall experience human teammates have within the task."
+    },
+    {
+      "title": "Examining the Impact of Varying Levels of AI Teammate Influence on Human-AI Teams.",
+      "publisher": "International Journal of Human-Computer Studies",
+      "src": "https://doi.org/10.1016/j.ijhcs.2023.103061",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Journal",
+      "summary": "The implementation of AI teammates is creating a wealth of research that examines how AI teammates impact human-AI teams. However, AI teammates themselves are not static, and their roles and responsibilities in human-AI teams are likely to change as technologies advance in the coming years. As a result of this advancement, AI teammates will gain influence in teams, which refers to their ability to change and manipulate a team’s shared resources. This study uses a mixed-methods experiment to examine how the amount of influence AI teammates have on a team’s shared resources can impact the team outcomes of human teammate performance, teammate perceptions, and whole-team perception. Results indicate that AI teammates that increase their influence on shared resources over time can stagnate the improvement of human performance, but AI teammates that decrease their influence on shared resources can actually encourage humans to improve their own performance. Additionally, AI teammates that are highly influential on shared resources can make humans perceive a greater cognitive workload. However, qualitative results indicate that these impacts on human performance and perception do not consistently impact the acceptance humans form for AI teammates. Rather, humans form acceptance for AI teammates if said AI use its influence to manipulate resources to benefit the personal goals of human teammates. These results have critical implications for human-AI teaming as it shows that the influence AI teammates have on shared resources can be designed in a way that improves human performance. However, future research is going to need to focus more critically on how the personal goals humans have, which may not align with a team’s overall goals, are going to mediate the effectiveness of the AI teammate influence."
+    },
+    {
+      "title": "Let’s Think Together! Assessing Shared Mental Models, Performance, and Trust in Human-Agent Teams.",
+      "publisher": "Proceedings of the ACM on Human-Computer Interaction",
+      "src": "https://doi.org/10.1145/3492832",
+      "year": 2022,
+      "reviewed": true,
+      "type": "Journal",
+      "summary": "An emerging research agenda in Computer-Supported Cooperative Work focuses on human-agent teaming and AI agent's roles and effects in modern teamwork. In particular, one understudied key question centers around the construct of team cognition within human-agent teams. This study explores the unique nature of team dynamics in human-agent teams compared to human-human teams and the impact of team composition on perceived team cognition, team performance, and trust. In doing so, a mixed-method approach, including three team composition conditions (all human, human-human-agent, human-agent-agent), completed the team simulation NeoCITIES and completed shared mental model, trust, and perception measures. Results found that human-agent teams are similar to human-only teams in the iterative development of team cognition and the importance of communication to accelerating its development; however, human-agent teams are different in that action-related communication and explicitly shared goals are beneficial to developing team cognition. Additionally, human-agent teams trusted agent teammates less when working with only agents and no other humans, perceived less team cognition with agent teammates than human ones, and had significantly inconsistent levels of team mental model similarity when compared to human-only teams. This study contributes to Computer-Supported Cooperative Work in three significant ways: 1) advancing the existing research on human-agent teaming by shedding light on the relationship between humans and agents operating in collaborative environments, 2) characterizing team cognition development in human-agent teams; and 3) advancing real-world design recommendations that promote human-centered teaming agents and better integrate the two."
+    },
+    {
+      "title": "Can We Build it? Yes, We Can! Development Procedure of High-Fidelity Simulation Environments for Human-Agent Teams.",
+      "publisher": "In Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+      "src": "https://doi.org/10.1177/21695067231192225",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "This paper presents a bottom-up approach to designing and developing a high-fidelity simulation environment that fosters human acceptance of artificial intelligence (AI) as teammates by refining their mental models of appropriate teamwork expectations. Our process begins by first identifying an appropriate contextual situation that warrants humans teaming with AI as opposed to other team-based configurations. Those criteria are based on the delegation of roles appropriate to the established strengths of humans/AI, as well as the interdependence created between those roles to accentuate the expectations of teammate behavior. Next, qualitative interviews should be conducted with diverse subject matter experts to gain a comprehensive understanding of the situation and the environmental attributes through various perspectives. Once analyzed using thematic analysis, themes present themselves as design recommendations on how to create a high-fidelity simulation environment that nurtures human-agent team collaboration."
+    },
+    {
+      "title": "Balancing the Scales of Explainable and Transparent AI Agents within Human-Agent Teams.",
+      "publisher": "In Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+      "src": "https://doi.org/10.1177/21695067231192250",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "With the progressive nature of Human-Agent Teams becoming more and more useful for high-quality work output, there is a proportional need for bi-directional communication between teammates to increase efficient collaboration. This need is centered around the well-known issue of innate mistrust between humans and artificial intelligence, resulting in sub-optimal work. To combat this, computer scientists and humancomputer interaction researchers alike have presented and refined specific solutions to this issue through different methods of AI interpretability. These different methods include explicit AI explanations as well as implicit manipulations of the AI interface, otherwise known as AI transparency. Individually these solutions hold considerable merit in repairing the relationship of trust between teammates, but also have individual flaws. We posit that the combination of different interpretable mechanisms mitigates each other’s flaws and extenuates their strengths within human-agent teams."
+    },
+    {
+      "title": "Human-AI teams in complex military operations: Soldiers’ perception of intelligent AI agents as teammates in human-AI teams.",
+      "publisher": "In Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+      "src": "https://doi.org/10.1177/21695067231192423",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "Military decision-making frequently involves complex problems in non-routine situations with minimal rule-based or automated solutions. As human information processing capabilities are limited, processing the required scale of information increases the decision-makers’ workload, impacting their situational awareness and affecting the quality of soldiers’ decisions. This study uses a route clearance task as a use-case scenario to understand the issues in team-level decision-making in military tasks, the challenges in successfully completing the mission, and the demands placed on AI teammates when working in a human-AI team. We interviewed eight subject matter experts with prior experience in route clearance operations. The themes generated by analyzing the interview transcripts provide insights into soldiers’ perceptions of AI teammates as well as recommendations for successfully integrating human-AI teams in military settings."
+    },
+    {
+      "title": "Selective sharing is caring: Toward the design of a collaborative tool to facilitate team sharing.",
+      "publisher": "Proceedings of the 56th Hawaii International Conference on System Sciences",
+      "src": "https://hdl.handle.net/10125/102681",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "Temporary teams are commonly limited by the amount of experience with their new teammates, leading to poor understanding and coordination. Collaborative tools can promote teammate team mental models (e.g., teammate attitudes, tendencies, and preferences) by sharing personal information between teammates during team formation. The current study utilizes 89 participants engaging in real-world temporary teams to better understand user perceptions of sharing personal information. Qualitative and quantitative results revealed unique findings including: 1) Users perceived personality and conflict management style assessments to be accurate and sharing these assessments to be helpful, but had mixed perceptions regarding the appropriateness of sharing; 2) Users of the collaborative tool had higher perceptions of sharing in terms of helpfulness and appropriateness; and 3) User feedback highlighted the need for tools to selectively share less data with more context to improve appropriateness and helpfulness while reducing the amount of time to read."
+    },
+    {
+      "title": "The Effect of AI Teammate Ethicality on Trust Outcomes and Individual Performance in Human-AI Teams.",
+      "publisher": "Proceedings of the 56th Hawaii International Conference on System Sciences",
+      "src": "https://hdl.handle.net/10125/102668",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "This study improves the understanding of trust in human-AI teams by investigating the relationship of AI teammate ethicality on individual outcomes of trust (i.e., monitoring, confidence, fear) in AI teammates and human teammates over time. Specifically, a synthetic task environment was built to support a three person team with two human teammate and one AI teammate (simulated by a confederate). The AI teammate performed either an ethical or unethical action in three missions and measures of trust in the human and AI teammates were taken after each mission. Results from the study revealed that unethical actions by the AT had a significant effect on nearly all of the outcomes of trust measured and that levels of trust were dynamic over time for both the AI and human teammates, with the AI teammate recovering trust to Mission 1 levels by Mission 3. AI ethicality was mostly unrelated to participants trust in their fellow human teammate but did decrease perceptions of fear, paranoia, and skepticism in them and trust in the human and AI teammate was not significantly related to individual performance outcomes, which both diverge from previous trust research in human-AI teams utilizing competency-based trust violations."
+    },
+    {
+      "title": "Designing for Mutually Beneficial Decision Making in Human-Agent Teaming.",
+      "publisher": "In Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+      "src": "https://doi.org/10.1177/1071181322661358",
+      "year": 2022,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "This paper presents a joint decision-making framework between human and artificial intelligent agents in an effort to create a cohesive team uninhibited by each other’s actions. Based on the well-known Recognition Primed Decision-Making Model, our framework expands upon RPD’s single decision maker to be more Human-Agent Teaming (HAT) oriented. Specifically, our framework includes three layers of shared cognition to ensure both a consistent level of transparency between members and the efficient completion of the task. The first layer provides itself as a foundation of expectations that provides familiarity recognition in a situation. The second layer categorizes the environmental features into relevant decisions informing the symbiotic nature of who should and how to enact decisions collaboratively, which is the third layer. Altogether, this mutually beneficial decision-making model emphasizes transparency so that both humans and artificial agents are equal partners in completing tasks in unique situations."
+    },
+    {
+      "title": "The Use of Eye Metrics to Index Cognitive Workload in Video Games.",
+      "publisher": "2016 IEEE Second Workshop on Eye Tracking and Visualization",
+      "src": "https://doi.org/10.1109/ETVIS.2016.7851168",
+      "year": 2016,
+      "reviewed": true,
+      "type": "Conference",
+      "summary": "Eye tracking metrics may provide unobtrusive measures of cognitive states such as workload and fatigue and can serve as useful inputs into future human computer interface technologies. To further explore the usefulness of eye tracking for the estimation of cognitive state, the current experiment evaluated saccade, fixation, and pupil-based measures to identify which metrics reliably indexed cognitive workload in a dynamic, unconstrained task (Tetris ® ). In line with previous studies, our results show that some eye movement features are correlated with changes in workload, manipulated here via task difficulty. Among these were blink duration, saccade velocity, and tonic pupil dilation."
+    },
+    {
+      "title": "Team Composition and Interdependence: Empirically Linking Two Fundamental Teaming Considerations in Human-AI Teams.",
+      "publisher": "Human–Computer Interaction",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Review",
+      "summary": null
+    },
+    {
+      "title": "Language, Camera, Autonomy! Prompt-engineered Robot Control for Rapidly Evolving Deployment.",
+      "publisher": "In 2022 17th ACM/IEEE International Conference on Human-Robot Interaction",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Review",
+      "summary": null
+    },
+    {
+      "title": "Human Factors Considerations for the Context-Aware Design of Adaptive Autonomous Teammates.",
+      "publisher": "Ergonomics",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Review",
+      "summary": null
+    },
+    {
+      "title": "What You Say vs What You Do: Utilizing Positive Emotional Expressions to Relay AI Teammate Intent within Human-AI Teams.",
+      "publisher": "International Journal of Human-Computer Studies",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Review",
+      "summary": null
+    },
+    {
+      "title": "Quantifying Visual Perception Before, Upon, and After an Eye Fixation.",
+      "publisher": "2017 ARL Summer Student Program, Volume II: Compendium of Abstracts",
+      "src": "https://apps.dtic.mil/sti/citations/AD1043945",
+      "year": 2017,
+      "reviewed": false,
+      "type": "Abstract",
+      "summary": ""
+    },
+    {
+      "title": "The Use of Eye Metrics to Index Cognitive Workload in Video Games.",
+      "publisher": "2016 ARL Summer Student Program, Volume II: Compendium of Abstracts ARL-TM-2016a",
+      "src": "https://apps.dtic.mil/sti/tr/pdf/AD1035324.pdf",
+      "year": 2016,
+      "reviewed": false,
+      "type": "Abstract",
+      "summary": ""
+    },
+    {
+      "title": "Correlations Between Tetris Fall Speeds and Eye Movement.",
+      "publisher": "2015 ARL Summer Student Program, Volume II: Compendium of Abstracts ARL-TM-2015a",
+      "src": "https://apps.dtic.mil/sti/tr/pdf/AD1000355.pdf",
+      "year": 2015,
+      "reviewed": false,
+      "type": "Abstract",
+      "summary": ""
+    },
+    {
+      "title": "Insights towards the development of Soldier-Centered AI Teammates for Acceptance and Improved Team Effectiveness within the Army.",
+      "publisher": null,
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Work in Progress",
+      "summary": null
+    },
+    {
+      "title": "Development of High-Fidelity Simulation Environment to promote Soldier-AI Teaming Initiatives.",
+      "publisher": "Applied Ergonomics",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Work in Progress",
+      "summary": null
+    },
+    {
+      "title": " Put Me in Coach: From Training with AI Tools to Training for HAT Strategy.",
+      "publisher": "Computer Supported Cooperative Work",
+      "src": null,
+      "year": null,
+      "reviewed": false,
+      "type": "Work in Progress",
+      "summary": null
+    }
+  ]
+}
