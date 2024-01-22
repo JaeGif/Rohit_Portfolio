@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import LinkedinIcon from '../iconWrappers/LinkedinIcon';
 import GithubIcon from '../iconWrappers/GithubIcon';
 function Socials() {

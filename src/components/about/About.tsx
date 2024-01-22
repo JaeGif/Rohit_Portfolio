@@ -8,7 +8,7 @@ import AboutLinks from './AboutLinks';
 function About() {
   return (
     <div className='flex flex-col justify-center items-center'>
-      <div className='h-screen w-screen flex justify-evenly items-center'>
+      <div className='h-screen w-screen flex items-center flex-col-reverse md:flex-row justify-evenly'>
         <div className='flex flex-col justify-center items-center gap-2'>
           <div className='flex flex-col justify-center items-center'>
             <Name />
