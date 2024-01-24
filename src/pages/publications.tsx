@@ -1,10 +1,10 @@
 import PublicationsWrapper from '@/components/publications/PublicationsWrapper';
 import React from 'react';
-
+import CarouselWrapper from '@/components/publicationsCarousel/CarouselWrapper';
 function Publications() {
   return (
-    <div>
-      <PublicationsWrapper />
+    <div className='flex justify-center items-center'>
+      <CarouselWrapper />
     </div>
   );
 }
