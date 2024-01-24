@@ -13,4 +13,5 @@ export declare interface PublicationType {
     | string;
   authors: string[];
   summary: string | null;
+  image: string;
 }
