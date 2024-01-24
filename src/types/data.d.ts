@@ -11,5 +11,6 @@ export declare interface PublicationType {
     | 'Review'
     | 'Work in Progress'
     | string;
+  authors: string[];
   summary: string | null;
 }

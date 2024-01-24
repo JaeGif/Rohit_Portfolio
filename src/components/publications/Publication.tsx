@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ArticleImage from './ArticleImage';
+import uniqid from 'uniqid';
 type PublicationProps = {
   data: PublicationType;
 };
@@ -31,15 +32,27 @@ function Publication({ data }: PublicationProps) {
             <em>{data.type}</em>
           </p>
         )}
-        {data.type === 'Review' && (
-          <p className='text-sm'>
-            <em>Under Review</em>
-          </p>
-        )}
       </span>
       {data.src && (
-        <div className='flex flex-col justify-center items-center gap-2'>
+        <div className='flex flex-col justify-center items-center gap-2 w-1/3'>
           <ArticleImage src='/assets/rohit.jpg' />
+          {data.authors && (
+            <span>
+              <p>
+                {data.authors.map((author, i) => (
+                  <em
+                    className={`text-xs ${
+                      author === 'Rohit Mallick' ? 'font-bold' : ''
+                    }`}
+                    key={uniqid()}
+                  >
+                    {author}
+                    {i < data.authors.length - 1 && ', '}
+                  </em>
+                ))}
+              </p>
+            </span>
+          )}
           <a href={data.src} target='_blank' rel='noreferrer'>
             <motion.button
               whileHover={{ scale: 1.1 }}
