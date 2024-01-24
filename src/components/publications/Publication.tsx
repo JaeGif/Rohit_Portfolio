@@ -15,13 +15,13 @@ function Publication({ data }: PublicationProps) {
         <p>
           <em>{data.publisher}</em>
         </p>
-        {data.year && (
+        {/*         {data.year && (
           <p className='text-sm'>
             <em>{data.year}</em>
           </p>
-        )}
+        )} */}
         {data.summary && (
-          <div>
+          <div className='p-2'>
             <h3 className='text-lg text-blue-500'>Summary</h3>
             <p className='max-h-60 overflow-scroll'>{data.summary}</p>
           </div>
