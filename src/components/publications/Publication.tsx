@@ -10,7 +10,7 @@ type PublicationProps = {
 
 function Publication({ data }: PublicationProps) {
   return (
-    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white rounded-lg text-black gap-10'>
+    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white opacity-100 rounded-lg text-black gap-10'>
       <span className='flex flex-col'>
         <h2 className='text-xl pr-2'>{data.title}</h2>
         <p>

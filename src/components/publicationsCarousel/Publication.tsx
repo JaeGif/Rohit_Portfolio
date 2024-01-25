@@ -9,8 +9,9 @@ type PublicationProps = {
 // hover reveals full title, authors, venue, and link
 function Publication({ data }: PublicationProps) {
   return (
-    <div className='w-full h-full p-1'>
+    <div className='w-full h-full'>
       <img src={data.image} alt='placeholder' />
+      <h1 className='text-sm overflow-hidden'>{data.title}</h1>
     </div>
   );
 }
