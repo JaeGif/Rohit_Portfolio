@@ -10,10 +10,10 @@ function Overview({ data }: OverviewProps) {
   return (
     <motion.div
       key={uniqid()}
-      initial={{ x: -100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: -100, opacity: 0 }}
-      className='z-10 fixed top-0 opacity-95'
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ scale: 0, opacity: 0 }}
+      className='flex justify-center items-center'
     >
       <Publication data={data} />
     </motion.div>

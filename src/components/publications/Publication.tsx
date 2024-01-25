@@ -10,17 +10,17 @@ type PublicationProps = {
 
 function Publication({ data }: PublicationProps) {
   return (
-    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white opacity-100 rounded-lg text-black gap-10'>
-      <span className='flex flex-col'>
+    <div className='flex p-4 justify-between items center sm:w-3/4 w-full bg-white opacity-100 rounded-lg text-black gap-10 shadow-lg shadow-black'>
+      <span className='flex flex-col w-2/3'>
         <h2 className='text-xl pr-2'>{data.title}</h2>
         <p>
           <em>{data.publisher}</em>
         </p>
-        {/*         {data.year && (
+        {data.year && (
           <p className='text-sm'>
-            <em>{data.year}</em>
+            <em>Published: {data.year}</em>
           </p>
-        )} */}
+        )}
         {data.summary && (
           <div className='p-2'>
             <h3 className='text-lg text-blue-500'>Summary</h3>
