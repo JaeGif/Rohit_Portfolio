@@ -35,7 +35,7 @@ function Publication({ data }: PublicationProps) {
       </span>
       {data.src && (
         <div className='flex flex-col justify-center items-center gap-2 w-1/3'>
-          <ArticleImage src='/assets/rohit.jpg' />
+          <ArticleImage src={data.image} />
           {data.authors && (
             <span>
               <p>

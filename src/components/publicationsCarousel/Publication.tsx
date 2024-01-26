@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { PublicationType } from '@/types/data';
 import React from 'react';
-import Image from 'next/image';
 type PublicationProps = {
   data: PublicationType;
 };
@@ -10,8 +9,7 @@ type PublicationProps = {
 function Publication({ data }: PublicationProps) {
   return (
     <div className='w-full h-full'>
-      <img src={data.image} alt='placeholder' />
-      <h1 className='text-sm overflow-hidden'>{data.title}</h1>
+      <img src={data.image} alt='placeholder' className='w-full' />
     </div>
   );
 }
