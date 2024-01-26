@@ -24,7 +24,7 @@ function Publication({ data }: PublicationProps) {
         {data.summary && (
           <div className='p-2'>
             <h3 className='text-lg text-blue-500'>Summary</h3>
-            <p className='max-h-60 overflow-scroll'>{data.summary}</p>
+            <p className='max-h-60 overflow-scroll p-2'>{data.summary}</p>
           </div>
         )}
         {data.type === 'Work in Progress' && (
@@ -53,7 +53,7 @@ function Publication({ data }: PublicationProps) {
               </p>
             </span>
           )}
-          <a href={data.src} target='_blank' rel='noreferrer'>
+          <a href={data.src} target='_blank' rel='noreferrer' className='z-30'>
             <motion.button
               whileHover={{ scale: 1.1 }}
               className='border-2 border-black p-1 rounded-md flex justify-center items-center gap-2'

@@ -9,11 +9,14 @@ type OverviewProps = {
 function Overview({ data }: OverviewProps) {
   return (
     <motion.div
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
       key={uniqid()}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0, opacity: 0 }}
-      className='flex justify-center items-center'
+      className='flex justify-center items-center z-20'
     >
       <Publication data={data} />
     </motion.div>
