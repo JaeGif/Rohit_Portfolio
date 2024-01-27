@@ -7,7 +7,7 @@ type CurrentSlideProps = {
 };
 function CurrentSlide({ data }: CurrentSlideProps) {
   return (
-    <div className='h-[80vh] flex justify-center items-center'>
+    <div className='h-[70vh] flex justify-center items-center'>
       <Publication data={data} />
     </div>
   );

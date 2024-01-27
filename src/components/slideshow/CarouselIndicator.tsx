@@ -37,20 +37,25 @@ function CarouselIndicator({
     }
 
   return (
-    <span className='flex justify-center items-center gap-2'>
+    <span className='w-full h-[15vh] flex justify-around items-center'>
       <LeftChevron decIndex={handleDecIndex} />
-      {!data
-        ? bubbles
-        : data.map((publication, i) => (
-            <CurrentFeature
-              options={{ description: false }}
-              changeIndex={changeIndex}
-              key={uniqid()}
-              data={publication}
-              index={i}
-              highlightedIndex={index}
-            />
-          ))}
+      <span className='flex h-full justify-center items-center gap-4'>
+        {!data
+          ? bubbles
+          : data.map(
+              (publication, i) =>
+                Math.abs(i - index) <= 2 && (
+                  <CurrentFeature
+                    options={{ description: false }}
+                    changeIndex={changeIndex}
+                    key={uniqid()}
+                    data={publication}
+                    index={i}
+                    highlightedIndex={index}
+                  />
+                )
+            )}
+      </span>
       <RightChevron incIndex={handleIncIndex} />
     </span>
   );

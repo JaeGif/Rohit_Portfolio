@@ -1,13 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Image from 'next/image';
 
 type ArticleImageProps = {
   src: string;
 };
 function ArticleImage({ src }: ArticleImageProps) {
   return (
-    <div className='h-fit w-fit border-2 border-blue-300 rounded-md overflow-hidden'>
-      <Image src={src} height={200} width={100} alt='article' />
+    <div className='h-fit w-fit shadow-md overflow-hidden'>
+      <img src={src} className='h-full w-full' alt='article' />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { PublicationType } from '@/types/data';
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import DescriptiveContainer from './DesciptiveContainer';
 import { AnimatePresence, motion, useAnimationControls } from 'framer-motion';
 type CurrentFeatureProps = {
@@ -18,6 +18,7 @@ function CurrentFeature({
   options = { description: true },
 }: CurrentFeatureProps) {
   const controls = useAnimationControls();
+  const [distance, setDistance] = useState(index - highlightedIndex);
   useEffect(() => {
     if (index === highlightedIndex)
       controls.start({
@@ -25,6 +26,11 @@ function CurrentFeature({
         transition: { ease: 'linear', duration: 0.1 },
       });
   }, [index, highlightedIndex, controls, options]);
+
+  useEffect(() => {
+    setDistance(index - highlightedIndex);
+  }, [index, highlightedIndex]);
+
   return (
     <motion.div
       initial={{ scale: 1 }}
@@ -39,21 +45,24 @@ function CurrentFeature({
             }
           : () => {}
       }
-      className={`w-full h-full cursor-pointer ${
-        index === highlightedIndex && `shadow-lg shadow-black`
-      }`}
+      className={`flex h-full flex-col justify-center items-center cursor-pointer`}
     >
       <div
-        className={`h-fit w-fit rounded-t-md ${
+        className={`rounded-t-md h-full ${
           (index !== highlightedIndex || !options.description) &&
           `rounded-b-md ${
             !options.description &&
             index === highlightedIndex &&
-            'border-2 border-blue-400'
+            'border-2 border-blue-400 shadow-lg shadow-black'
           }`
         } overflow-hidden`}
       >
-        <img src={data.image} alt='placeholder' className='w-full' />
+        <img
+          src={data.image}
+          alt='placeholder'
+          style={{ opacity: 1 / Math.abs(distance) }}
+          className={`h-full`}
+        />
       </div>
       {options.description && (
         <AnimatePresence>

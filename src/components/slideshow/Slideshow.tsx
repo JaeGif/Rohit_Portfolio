@@ -28,9 +28,9 @@ function Slideshow({ data }: SlideshowProps) {
   }, [index, data]);
 
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center gap-5'>
       <CurrentSlide data={currentData} />
-      <div>
+      <div className='h-[15vh] w-full'>
         <CarouselIndicator
           handleDecIndex={handleDecIndex}
           handleIncIndex={handleIncIndex}
