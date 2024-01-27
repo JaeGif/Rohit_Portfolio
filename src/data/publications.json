@@ -34,7 +34,7 @@
         "Rohit Mallick",
         "Kapil Chalil Madathil"
       ],
-      "featured": false,
+      "featured": true,
 
       "image": "/assets/ExaminingTheImpact.jpg",
 
@@ -177,7 +177,7 @@
         "Nathan McNeese",
         "Kapil Chalil Madathil"
       ],
-      "featured": false,
+      "featured": true,
 
       "image": "/assets/DesigningForMutuallyBeneficial.jpg",
 
@@ -267,6 +267,8 @@
       "reviewed": false,
       "type": "Abstract",
       "authors": ["Rohit Mallick"],
+      "featured": false,
+
       "image": "/assets/placeholder1.jpg",
 
       "summary": null

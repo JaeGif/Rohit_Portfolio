@@ -12,6 +12,7 @@ export declare interface PublicationType {
     | 'Work in Progress'
     | string;
   authors: string[];
+  featured: boolean;
   summary: string | null;
   image: string;
 }
