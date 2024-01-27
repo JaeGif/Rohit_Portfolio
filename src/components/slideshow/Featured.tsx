@@ -10,7 +10,7 @@ type FeaturedProps = {
   data: PublicationType[];
 };
 function Featured({ data }: FeaturedProps) {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
 
   // contains featured articles and slowly cycles through them
   const handleChangeIndex = (incIndex: number) => {

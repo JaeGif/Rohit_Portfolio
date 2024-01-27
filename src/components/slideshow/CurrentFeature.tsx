@@ -8,21 +8,23 @@ type CurrentFeatureProps = {
   changeIndex: Function;
   index: number;
   highlightedIndex: number;
+  options?: { description?: boolean };
 };
 function CurrentFeature({
   data,
   changeIndex,
   index,
   highlightedIndex,
+  options = { description: true },
 }: CurrentFeatureProps) {
   const controls = useAnimationControls();
   useEffect(() => {
     if (index === highlightedIndex)
       controls.start({
-        scale: 1.025,
+        scale: options.description ? 1.025 : 1.2,
         transition: { ease: 'linear', duration: 0.1 },
       });
-  }, [index, highlightedIndex, controls]);
+  }, [index, highlightedIndex, controls, options]);
   return (
     <motion.div
       initial={{ scale: 1 }}
@@ -43,14 +45,16 @@ function CurrentFeature({
     >
       <div
         className={`h-fit w-fit rounded-t-md ${
-          index !== highlightedIndex && 'rounded-b-md'
+          (index !== highlightedIndex || !options.description) && 'rounded-b-md'
         } overflow-hidden`}
       >
         <img src={data.image} alt='placeholder' className='w-full' />
       </div>
-      <AnimatePresence>
-        {highlightedIndex === index && <DescriptiveContainer data={data} />}
-      </AnimatePresence>
+      {options.description && (
+        <AnimatePresence>
+          {highlightedIndex === index && <DescriptiveContainer data={data} />}
+        </AnimatePresence>
+      )}
     </motion.div>
   );
 }
