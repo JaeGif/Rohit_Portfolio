@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+If you want to edit the publications, you need to directly edit the publications.json file.
+URL: src/data/publications.json
 
-## Getting Started
+----- INSTALL FILES -----
+You need to have Node.js installed with the npm package manager
+Instructions for installation:
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm
 
-First, run the development server:
+After you have Node installed:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Pull the files to your machine
+2. In the command line type: npm i
+3. To run the site locally: npm run dev
+4. The command line will print the port it is being served from and you can either click the hyperlink from the command line
+   or you can go to your browser and navigate to localhost:<PORT> where <PORT> is the port it is served from. Next.js defaults to port 3000. If 3000 is busy, it will likely use 3001 and on and on until there is an open port.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After you make any changes, run the site locally before committing to see if it displays how you want it to.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+----- ADD A NEW ENTRY -----
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Place your thumbnail image\* in public/assets
+2. Open src/data/publictions.json
+3. Copy/Paste a previous entry, and edit the fields appropriately for your new entry
+4. Save the file
+5. Check local site before committing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- any normal image-type will work (even gifs), but jpg or webp is recommended for smaller file size and load times
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+----- DELETE AN ENTRY -----
 
-## Learn More
+1. Delete the item from publications.json
+2. If you're permanently removing it, you should also delete the thumbnail image
+3. Save changes and check the site locally
 
-To learn more about Next.js, take a look at the following resources:
+----- FIELD TYPES -----
+You can only edit publications.json with the correct field types. If you enter a number in a string field it will break
+Types can be found at src/types/data.d.ts
+The type file is READ ONLY
+Do not edit the type file without consulting me first, the site will not compil
+If you want to add new fields, that can be done, but multiple files will need changing so please consult me first
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+----- ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!! -----
