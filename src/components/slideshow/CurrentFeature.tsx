@@ -40,12 +40,17 @@ function CurrentFeature({
           : () => {}
       }
       className={`w-full h-full cursor-pointer ${
-        index === highlightedIndex && 'shadow-lg shadow-black'
+        index === highlightedIndex && `shadow-lg shadow-black`
       }`}
     >
       <div
         className={`h-fit w-fit rounded-t-md ${
-          (index !== highlightedIndex || !options.description) && 'rounded-b-md'
+          (index !== highlightedIndex || !options.description) &&
+          `rounded-b-md ${
+            !options.description &&
+            index === highlightedIndex &&
+            'border-2 border-blue-400'
+          }`
         } overflow-hidden`}
       >
         <img src={data.image} alt='placeholder' className='w-full' />
