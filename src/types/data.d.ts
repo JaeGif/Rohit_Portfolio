@@ -13,6 +13,6 @@ export declare interface PublicationType {
     | string;
   authors: string[];
   featured: boolean;
-  summary: string | null;
+  abstract: string | null;
   image: string;
 }

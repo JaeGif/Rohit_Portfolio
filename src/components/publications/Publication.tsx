@@ -21,10 +21,10 @@ function Publication({ data }: PublicationProps) {
             <em>Published: {data.year}</em>
           </p>
         )}
-        {data.summary && (
+        {data.abstract && (
           <div className='p-2'>
-            <h3 className='text-lg text-blue-500'>Summary</h3>
-            <p className='max-h-60 overflow-scroll p-2'>{data.summary}</p>
+            <h3 className='text-lg text-blue-500'>Abstract</h3>
+            <p className='max-h-60 overflow-scroll p-2'>{data.abstract}</p>
           </div>
         )}
         {data.type === 'Work in Progress' && (
