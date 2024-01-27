@@ -9,9 +9,9 @@ type CarouselIndicatorProps = {
   length: number;
   index: number;
   data?: PublicationType[];
-  changeIndex: Function;
-  handleIncIndex: Function;
-  handleDecIndex: Function;
+  changeIndex?: Function;
+  handleIncIndex?: Function;
+  handleDecIndex?: Function;
 };
 function CarouselIndicator({
   length,
@@ -37,14 +37,23 @@ function CarouselIndicator({
     }
 
   return (
-    <span className='w-full h-[15vh] flex justify-around items-center'>
-      <LeftChevron decIndex={handleDecIndex} />
-      <span className='flex h-full justify-center items-center gap-4'>
+    <span
+      className={`w-full ${
+        data ? 'h-[15vh]' : 'h-full'
+      } flex justify-around items-center`}
+    >
+      {data && handleDecIndex && <LeftChevron decIndex={handleDecIndex} />}
+      <span
+        className={`flex h-full justify-center items-center ${
+          data ? 'gap-4' : 'gap-2'
+        }`}
+      >
         {!data
           ? bubbles
-          : data.map(
+          : changeIndex &&
+            data.map(
               (publication, i) =>
-                Math.abs(i - index) <= 2 && (
+                Math.abs(i - index) <= 3 && (
                   <CurrentFeature
                     options={{ description: false }}
                     changeIndex={changeIndex}
@@ -56,7 +65,7 @@ function CarouselIndicator({
                 )
             )}
       </span>
-      <RightChevron incIndex={handleIncIndex} />
+      {data && handleIncIndex && <RightChevron incIndex={handleIncIndex} />}
     </span>
   );
 }

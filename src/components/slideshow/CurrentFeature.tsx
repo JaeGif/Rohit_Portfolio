@@ -28,8 +28,10 @@ function CurrentFeature({
   }, [index, highlightedIndex, controls, options]);
 
   useEffect(() => {
-    setDistance(index - highlightedIndex);
-  }, [index, highlightedIndex]);
+    !options.description
+      ? setDistance(index - highlightedIndex)
+      : setDistance(1);
+  }, [index, highlightedIndex, options]);
 
   return (
     <motion.div
