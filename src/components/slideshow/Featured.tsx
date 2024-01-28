@@ -6,6 +6,7 @@ import uniqid from 'uniqid';
 import CurrentFeature from './CurrentFeature';
 import LeftChevron from './LeftChevron';
 import RightChevron from './RightChevron';
+import CarouselIndicator from './CarouselIndicator';
 type FeaturedProps = {
   data: PublicationType[];
 };
@@ -28,18 +29,15 @@ function Featured({ data }: FeaturedProps) {
   return (
     <div className='flex justify-center items-start w-screen h-full'>
       <div className='flex w-full h-[80vh] justify-around items-center p-10 gap-2'>
-        <LeftChevron decIndex={handleDecIndex} />
-        {data.map((publication, i) => (
-          <div key={uniqid()} className=''>
-            <CurrentFeature
-              highlightedIndex={index}
-              index={i}
-              changeIndex={handleChangeIndex}
-              data={publication}
-            />
-          </div>
-        ))}
-        <RightChevron incIndex={handleIncIndex} />
+        <CarouselIndicator
+          length={data.length}
+          data={data}
+          index={index}
+          options={{ vHeight: 80, description: true, absCount: 1 }}
+          changeIndex={handleChangeIndex}
+          handleIncIndex={handleIncIndex}
+          handleDecIndex={handleDecIndex}
+        />
       </div>
     </div>
   );

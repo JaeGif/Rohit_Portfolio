@@ -8,21 +8,15 @@ import Slideshow from './Slideshow';
 function SlideshowWrapper() {
   const data = publicationDataset.publications;
   const [featured, setFeatured] = useState<PublicationType[]>();
-  const [notFeatured, setNotFeatured] = useState<PublicationType[]>();
 
   useEffect(() => {
-    if (featured && notFeatured) return;
+    if (featured) return;
     let featuredTemp = [];
-    let unFeaturedTemp = [];
     for (let i = 0; i < data.length; i++) {
       if (data[i].featured) featuredTemp.push(data[i]);
-      else {
-        unFeaturedTemp.push(data[i]);
-      }
     }
     if (!featured) setFeatured(featuredTemp);
-    if (!notFeatured) setNotFeatured(unFeaturedTemp);
-  }, [data, featured, notFeatured]);
+  }, [data, featured]);
 
   return (
     <div className='h-full w-full'>
@@ -32,12 +26,10 @@ function SlideshowWrapper() {
           <Featured data={featured} />
         </div>
       )}
-      {notFeatured && (
-        <div className='flex flex-col'>
-          <h1 className='pl-10'>Everything Else</h1>
-          <Slideshow data={notFeatured} />
-        </div>
-      )}
+      <div className='flex flex-col'>
+        <h1 className='pl-10'>Everything Else</h1>
+        <Slideshow data={data} />
+      </div>
     </div>
   );
 }

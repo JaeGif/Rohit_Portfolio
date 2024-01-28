@@ -28,9 +28,7 @@ function CurrentFeature({
   }, [index, highlightedIndex, controls, options]);
 
   useEffect(() => {
-    !options.description
-      ? setDistance(index - highlightedIndex)
-      : setDistance(1);
+    setDistance(index - highlightedIndex);
   }, [index, highlightedIndex, options]);
 
   return (
@@ -47,7 +45,9 @@ function CurrentFeature({
             }
           : () => {}
       }
-      className={`flex h-full flex-col justify-center items-center cursor-pointer`}
+      className={`flex h-full ${
+        options.description && 'w-full'
+      } flex-col justify-center items-center cursor-pointer`}
     >
       <div
         className={`rounded-t-md h-full ${

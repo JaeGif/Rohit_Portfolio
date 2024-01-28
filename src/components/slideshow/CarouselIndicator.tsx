@@ -12,6 +12,7 @@ type CarouselIndicatorProps = {
   changeIndex?: Function;
   handleIncIndex?: Function;
   handleDecIndex?: Function;
+  options?: { vHeight?: number; description?: boolean; absCount?: number };
 };
 function CarouselIndicator({
   length,
@@ -20,6 +21,7 @@ function CarouselIndicator({
   changeIndex,
   handleDecIndex,
   handleIncIndex,
+  options = { vHeight: 15, description: false, absCount: 3 },
 }: CarouselIndicatorProps) {
   let bubbles = [];
 
@@ -39,7 +41,7 @@ function CarouselIndicator({
   return (
     <span
       className={`w-full ${
-        data ? 'h-[15vh]' : 'h-full'
+        data ? `h-[${options.vHeight}vh]` : 'h-full'
       } flex justify-around items-center`}
     >
       {data && handleDecIndex && <LeftChevron decIndex={handleDecIndex} />}
@@ -53,9 +55,9 @@ function CarouselIndicator({
           : changeIndex &&
             data.map(
               (publication, i) =>
-                Math.abs(i - index) <= 3 && (
+                Math.abs(i - index) <= options.absCount! && (
                   <CurrentFeature
-                    options={{ description: false }}
+                    options={{ description: options.description }}
                     changeIndex={changeIndex}
                     key={uniqid()}
                     data={publication}
