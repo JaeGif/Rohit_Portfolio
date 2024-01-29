@@ -10,14 +10,14 @@ type FeaturedElementProps = {
 };
 function FeaturedElement({ data, index, current }: FeaturedElementProps) {
   const [isCurrent, setIsCurrent] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
   useEffect(() => {
-    Math.abs(current - index) <= 2 ? setIsHidden(false) : setIsHidden(true);
     index === current ? setIsCurrent(true) : setIsCurrent(false);
   }, [index, current, isCurrent]);
   return (
     <motion.div
-      className={`h-full w-full border-2 flex-col justify-center items-center cursor-pointe`}
+      className={`h-full w-full border-2 flex-col justify-center items-center cursor-pointer ${
+        isCurrent && 'border-2 border-blue-400'
+      } overflow-hidden`}
     >
       <motion.img
         src={data.image}
@@ -26,9 +26,9 @@ function FeaturedElement({ data, index, current }: FeaturedElementProps) {
           isCurrent ? 'opacity-100' : 'opacity-80'
         }`}
       />
-      {/*       <AnimatePresence>
-        <DescriptiveContainer data={data} />
-      </AnimatePresence> */}
+      <AnimatePresence>
+        {isCurrent && <DescriptiveContainer data={data} />}
+      </AnimatePresence>
     </motion.div>
   );
 }

@@ -2,32 +2,34 @@ import React from 'react';
 
 function PersonalDescription() {
   return (
-    <div id='about' className='flex flex-col w-full p-16'>
-      <h1>About</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras
-        ornare arcu dui vivamus arcu felis bibendum. Duis convallis convallis
-        tellus id interdum. Penatibus et magnis dis parturient montes nascetur.
-        Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.
-        Et leo duis ut diam quam nulla porttitor massa id. Iaculis urna id
-        volutpat lacus laoreet non curabitur gravida. Mollis nunc sed id semper
-        risus in hendrerit gravida. Quis commodo odio aenean sed adipiscing diam
-        donec adipiscing tristique.{' '}
-      </p>
-      <br />
-      <p>
-        Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla.
-        Tristique nulla aliquet enim tortor at auctor urna nunc id. Aliquet
-        bibendum enim facilisis gravida. Suspendisse ultrices gravida dictum
-        fusce ut. Consectetur a erat nam at. Et sollicitudin ac orci phasellus
-        egestas. Parturient montes nascetur ridiculus mus mauris vitae. Ac
-        placerat vestibulum lectus mauris ultrices eros in cursus. Vestibulum
-        morbi blandit cursus risus at ultrices mi tempus imperdiet. Consequat
-        semper viverra nam libero justo laoreet sit amet cursus. Sed velit
-        dignissim sodales ut eu sem integer vitae justo. Sed viverra ipsum nunc
-        aliquet bibendum.
-      </p>
+    <div id='about' className='flex flex-col w-full'>
+      <h1>Biography</h1>
+      <div className='flex w-full justify-start flex-col gap-2'>
+        <p>
+          Hiya! My name is Rohit Mallick and I’m from Bel Air, Maryland. My
+          family has always been interested in exploring new places and
+          that&apos;s why I’m no different! I&apos;ve visited Western Europe,
+          India, Nepal, Singapore, Thailand and more! When it came time to
+          choose an undergraduate college I knew I needed to leave Maryland so I
+          ventured off and became a Purdue University Boilermaker. In May 2020 I
+          successfully graduated with a Brain and Behavioral Sciences bachelors
+          and a minor in Computer Science. It was through my experiences at
+          Purdue and my summer internships at the U.S. Army Research Lab that
+          led me to Clemson&apos;s TRACE Lab to pursue research as a career.
+          Upon entering, I was astounded by the range of research ideas and
+          different disciplines working together cohesively and efficiently.
+          This was my first indication that I had made the right choice.
+        </p>
+        <br />
+        <p>
+          Currently, I am pursuing a Human-Centered Computing PhD and focusing
+          on how to design effective AI teammates that motivate and inspire
+          their human teammates within human-AI teams. I am eager to continue
+          making a positive difference within the field of human-computer
+          interaction and look forward to learning more about you! Thanks for
+          visiting!
+        </p>
+      </div>
     </div>
   );
 }

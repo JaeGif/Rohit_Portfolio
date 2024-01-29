@@ -181,7 +181,7 @@
         "Anthony J. Ries",
         "Brent J. Lance"
       ],
-      "featured": false,
+      "featured": true,
       "image": "/assets/papers/TheUseOfEyeMetrics.jpg",
       "abstract": "Eye tracking metrics may provide unobtrusive measures of cognitive states such as workload and fatigue and can serve as useful inputs into future human computer interface technologies. To further explore the usefulness of eye tracking for the estimation of cognitive state, the current experiment evaluated saccade, fixation, and pupil-based measures to identify which metrics reliably indexed cognitive workload in a dynamic, unconstrained task (Tetris ® ). In line with previous studies, our results show that some eye movement features are correlated with changes in workload, manipulated here via task difficulty. Among these were blink duration, saccade velocity, and tonic pupil dilation."
     }

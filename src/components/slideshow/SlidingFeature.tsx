@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimate } from 'framer-motion';
 import FeaturedElement from './FeaturedElement';
 import { PublicationType } from '@/types/data';
@@ -12,38 +12,48 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   const [scope, animate] = useAnimate();
   const [current, setCurrent] = useState(Math.floor(data.length / 2));
   const handleChangeIndex = (clickedIndex: number) => {
+    console.log(clickedIndex, current, data.length);
     if (clickedIndex === current) return;
+    if (
+      clickedIndex === 0 ||
+      current === 0 ||
+      current === 1 ||
+      clickedIndex === data.length - 1 ||
+      current === data.length - 1
+    ) {
+      console.log('restricted');
+      return setCurrent(clickedIndex);
+    }
     const distance = current - clickedIndex;
-    const travel = distance * 20;
-    animate(scope.current, { x: `${travel}%` });
-    setCurrent(clickedIndex);
-    console.log(distance, travel);
-  };
+    console.log('translating', distance);
 
+    const travel = distance * 30;
+    console.log(distance);
+    animate(scope.current, { x: `${travel}vw` });
+    setCurrent(clickedIndex);
+  };
+  useEffect(() => {
+    console.log(current);
+  }, [current]);
   return (
-    <motion.span className='w-full h-full flex justify-center items-center overflow-hidden border-2'>
-      <motion.div
-        ref={scope}
-        className='border-2 border-red-500 flex justify-center w-full items-center'
-      >
-        {data.map(
-          (publication, i) =>
-            Math.abs(current - i) <= 2 && (
-              <motion.div
-                onClick={() => handleChangeIndex(i)}
-                className='h-full shadow-lg shadow-black w-[20%] border-fuchsia-200 border-2'
-                key={uniqid()}
-              >
-                <FeaturedElement
-                  data={publication}
-                  index={i}
-                  current={current}
-                />
-              </motion.div>
-            )
-        )}
-      </motion.div>
-    </motion.span>
+    <span className='w-full h-full flex justify-center items-center border-2'>
+      <div className='flex justify-center items-center border-blue-500 border-2 w-[90vw]'>
+        <motion.div
+          ref={scope}
+          className='border-2 border-red-500 flex justify-center w-fit items-center'
+        >
+          {data.map((publication, i) => (
+            <div
+              onClick={() => handleChangeIndex(i)}
+              className='h-full shadow-lg shadow-black w-[30vw] min-w-[30vw] border-fuchsia-200 border-2'
+              key={uniqid()}
+            >
+              <FeaturedElement data={publication} index={i} current={current} />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </span>
   );
 }
 
