@@ -18,7 +18,10 @@ function Header() {
         <Link className={urlParam === '/' ? 'text-blue-500' : ''} href={'/'}>
           Home
         </Link>
-        <Link href={'/#about'} scroll={false}>
+        <Link
+          href={'/about'}
+          className={urlParam === '/about' ? 'text-blue-500' : ''}
+        >
           About
         </Link>
         <Link

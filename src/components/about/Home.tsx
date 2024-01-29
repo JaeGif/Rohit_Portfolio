@@ -5,7 +5,8 @@ import React from 'react';
 import PersonalDescription from './PersonalDescription';
 import Socials from './Socials';
 import AboutLinks from './AboutLinks';
-function About() {
+import SponsersAndCollaborations from './SponsorsAndCollaborations';
+function Home() {
   return (
     <div className='flex flex-col justify-center items-center'>
       <div className='h-screen w-screen flex items-center flex-col-reverse md:flex-row justify-evenly'>
@@ -19,9 +20,9 @@ function About() {
         </div>
         <Headshot />
       </div>
-      <PersonalDescription />
+      <SponsersAndCollaborations />
     </div>
   );
 }
 
-export default About;
+export default Home;
