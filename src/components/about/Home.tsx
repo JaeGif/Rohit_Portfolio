@@ -2,7 +2,6 @@ import Headshot from '@/components/about/Headshot';
 import Name from '@/components/about/Name';
 import Title from '@/components/about/Title';
 import React from 'react';
-import PersonalDescription from './PersonalDescription';
 import Socials from './Socials';
 import AboutLinks from './AboutLinks';
 import SponsersAndCollaborations from './SponsorsAndCollaborations';
