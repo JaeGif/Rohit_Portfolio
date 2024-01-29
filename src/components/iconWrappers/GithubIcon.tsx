@@ -12,7 +12,7 @@ function GithubIcon({ height = 32 }: GithubIconProps) {
       viewBox='0 0 128 128'
       height={height}
     >
-      <g fill={'#FFFFFF'}>
+      <g fill={'#000'}>
         <path
           fillRule='evenodd'
           clipRule='evenodd'

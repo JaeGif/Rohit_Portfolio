@@ -50,7 +50,7 @@ function CurrentFeature({
       } flex-col justify-center items-center cursor-pointer`}
     >
       <div
-        className={`rounded-t-md h-full ${
+        className={`rounded-t-md h-full shadow-md ${
           (index !== highlightedIndex || !options.description) &&
           `rounded-b-md ${
             !options.description &&

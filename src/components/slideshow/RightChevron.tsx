@@ -19,7 +19,7 @@ function RightChevron({ incIndex }: RightChevronProps) {
         width='48'
       >
         <path
-          fill='#fff'
+          fill='#000'
           d='M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z'
         />
       </svg>

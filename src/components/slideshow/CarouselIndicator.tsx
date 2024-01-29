@@ -31,7 +31,7 @@ function CarouselIndicator({
         <div
           key={uniqid()}
           className={`h-2 w-2 rounded-xl ${
-            index === i ? 'bg-blue-500' : 'bg-white'
+            index === i ? 'bg-blue-500' : 'bg-gray-400'
           }`}
         >
           <div className='invisible h-1 w-1'>empty</div>
