@@ -6,7 +6,8 @@ type CollaborationsProps = {
 };
 function Collaborations({ data }: CollaborationsProps) {
   return (
-    <div>
+    <div className='flex flex-col gap-5'>
+      <h1 className='p-5'>Collaborations</h1>
       <RightRow data={data} />
     </div>
   );

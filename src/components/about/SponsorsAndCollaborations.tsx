@@ -6,7 +6,7 @@ import sponsors from '../../data/sponsorships.json';
 
 function SponsersAndCollaborations() {
   return (
-    <div>
+    <div className='flex flex-col'>
       <Sponsorships data={sponsors.sponsorships} />
       <Collaborations data={collaborators.collaborators} />
     </div>

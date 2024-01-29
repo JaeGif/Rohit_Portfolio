@@ -1,9 +1,7 @@
 {
   "sponsorships": [
-    { "src": "/assets/home/arl.png", "title": "Army Research Laboratory" },
     { "src": "/assets/home/ccdc.png", "title": "CCDC" },
     { "src": "/assets/home/onr.png", "title": "ONR" },
-    { "src": "/assets/home/ORISE.svg", "title": "ORISE" },
-    { "src": "/assets/home/purdueLogo.png", "title": "Purdue" }
+    { "src": "/assets/home/ORISE.svg", "title": "ORISE" }
   ]
 }

@@ -6,7 +6,8 @@ type SponsorshipsProps = {
 };
 function Sponsorships({ data }: SponsorshipsProps) {
   return (
-    <div>
+    <div className='flex flex-col gap-5'>
+      <h1 className='p-5'>Sponsorships</h1>
       <LeftRow data={data} />
     </div>
   );

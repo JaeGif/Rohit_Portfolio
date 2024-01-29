@@ -8,13 +8,13 @@ type LeftRowProps = {
 // takes a truncated data array
 function LeftRow({ data }: LeftRowProps) {
   return (
-    <div className='flex gap-40'>
+    <div className='flex gap-40 overflow-hidden w-screen'>
       {data.map((img) => (
         <motion.div
-          animate={{ x: -1000 }}
+          animate={{ x: -500 }}
           transition={{
             ease: 'linear',
-            duration: 50,
+            duration: 20,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
