@@ -29,6 +29,7 @@ function CarouselIndicator({
     for (let i = 0; i < length; i++) {
       bubbles.push(
         <div
+          key={uniqid()}
           className={`h-2 w-2 rounded-xl ${
             index === i ? 'bg-blue-500' : 'bg-white'
           }`}

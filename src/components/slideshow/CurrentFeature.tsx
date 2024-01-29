@@ -29,7 +29,7 @@ function CurrentFeature({
 
   useEffect(() => {
     setDistance(index - highlightedIndex);
-  }, [index, highlightedIndex, options]);
+  }, [index, highlightedIndex, options, distance]);
 
   return (
     <motion.div
@@ -62,7 +62,7 @@ function CurrentFeature({
         <img
           src={data.image}
           alt='placeholder'
-          style={{ opacity: 1 / Math.abs(distance) }}
+          style={{ opacity: 1 / (distance === 0 ? 1 : Math.abs(distance)) }}
           className={`h-full`}
         />
       </div>
