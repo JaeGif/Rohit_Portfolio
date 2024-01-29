@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function AboutLinks() {
   return (
@@ -24,12 +25,14 @@ function AboutLinks() {
           </motion.svg>
         </motion.button>
       </a>
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        className='p-2 rounded-md hover:border-blue-400'
-      >
-        Contact
-      </motion.button>
+      <Link href={'/contact'}>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          className='p-2 rounded-md hover:border-blue-400'
+        >
+          Contact
+        </motion.button>
+      </Link>
     </nav>
   );
 }
