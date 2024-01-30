@@ -13,7 +13,6 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   const [current, setCurrent] = useState(Math.floor(data.length / 2));
   const [translateX, setTranslateX] = useState(0);
   const width = 25;
-  const widthStr = '25vw';
   const handleChangeIndex = (clickedIndex: number) => {
     if (clickedIndex === current) return;
 
@@ -40,9 +39,7 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   return (
     <span className='w-full h-full flex justify-center items-center'>
       <div
-        className={`flex justify-center items-center w-[${
-          width * 3
-        }vw] h-full overflow-hidden`}
+        className={`flex justify-center items-center w-[75vw] h-full overflow-hidden`}
       >
         <motion.div
           animate={{ x: `${translateX}vw` }}
@@ -51,15 +48,10 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
           {data.map((publication, i) => (
             <div
               onClick={() => handleChangeIndex(i)}
-              className={`h-full w-[${width}vw] min-w-[${width}vw]`}
+              className={`h-full w-[25vw] min-w-[25vw]`}
               key={uniqid()}
             >
-              <FeaturedElement
-                width={width}
-                data={publication}
-                index={i}
-                current={current}
-              />
+              <FeaturedElement data={publication} index={i} current={current} />
             </div>
           ))}
         </motion.div>

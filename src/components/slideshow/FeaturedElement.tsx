@@ -7,14 +7,8 @@ type FeaturedElementProps = {
   data: PublicationType;
   index: number;
   current: number;
-  width: number;
 };
-function FeaturedElement({
-  data,
-  index,
-  current,
-  width,
-}: FeaturedElementProps) {
+function FeaturedElement({ data, index, current }: FeaturedElementProps) {
   const [isCurrent, setIsCurrent] = useState(false);
   useEffect(() => {
     console.log(index, isCurrent);
@@ -35,7 +29,7 @@ function FeaturedElement({
       <motion.img
         src={data.image}
         alt='placeholder'
-        className={`min-w-[${width}vw] object-contain`}
+        className={`min-w-full object-contain`}
       />
       <AnimatePresence>
         {isCurrent && <DescriptiveContainer data={data} />}
