@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 import FeaturedElement from './FeaturedElement';
 import { PublicationType } from '@/types/data';
 import uniqid from 'uniqid';
-import LeftChevron from './LeftChevron';
-import RightChevron from './RightChevron';
+
 type SlidingFeatureProps = {
   data: PublicationType[];
 };

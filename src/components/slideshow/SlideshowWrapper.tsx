@@ -27,7 +27,7 @@ function SlideshowWrapper() {
         </div>
       )}
       <div className='flex flex-col'>
-        <h1 className='pl-10'>Everything Else</h1>
+        <h1 className='p-10'>Publications</h1>
         <Slideshow data={data} />
       </div>
     </div>

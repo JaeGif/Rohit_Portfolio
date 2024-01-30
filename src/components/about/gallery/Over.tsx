@@ -9,7 +9,13 @@ function Over({ data }: OverProps) {
     <div className='sticky top-0 left-0 grid grid-cols-3 z-20 gap-[10%] p-10 pt-5'>
       {data.map((image) => (
         <div key={uniqid()} className='p-1 bg-white shadow-xl w-fit'>
-          <Image src={image.src} alt='hobby image' height={500} width={500} />
+          <Image
+            loading='lazy'
+            src={image.src}
+            alt='hobby image'
+            height={500}
+            width={500}
+          />
         </div>
       ))}
     </div>

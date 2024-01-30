@@ -19,7 +19,13 @@ function Under({ data, foreground }: UnderProps) {
           key={uniqid()}
           className={`p-2 bg-white shadow-xl w-fit`}
         >
-          <Image src={image.src} alt='hobby image' height={700} width={700} />
+          <Image
+            loading='lazy'
+            src={image.src}
+            alt='hobby image'
+            height={700}
+            width={700}
+          />
         </motion.div>
       ))}
     </motion.div>
