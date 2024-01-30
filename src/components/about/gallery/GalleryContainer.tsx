@@ -5,10 +5,17 @@ import Under from './Under';
 import Over from './Over';
 function GalleryContainer() {
   const gallery = data.gallery;
+  const [isUnderOver, setIsUnderOver] = useState(false);
   return (
-    <div className='relative w-full h-screen'>
-      <Under data={gallery.slice(gallery.length / 2)} />
-      <Over data={gallery.slice(gallery.length / 2, -1)} />
+    <div
+      onClick={() => setIsUnderOver((prev) => !isUnderOver)}
+      className='relative w-full h-screen overflow-scroll no-scrollbar'
+    >
+      <Under
+        foreground={isUnderOver}
+        data={gallery.slice(gallery.length / 3)}
+      />
+      <Over data={gallery.slice(gallery.length / 3, -1)} />
     </div>
   );
 }
