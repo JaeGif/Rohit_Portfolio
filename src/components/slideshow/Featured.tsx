@@ -1,12 +1,6 @@
 import { PublicationType } from '@/types/data';
-import React, { useEffect, useState } from 'react';
-import Publication from '../publicationsCarousel/Publication';
+import React from 'react';
 
-import uniqid from 'uniqid';
-import CurrentFeature from './CurrentFeature';
-import LeftChevron from './LeftChevron';
-import RightChevron from './RightChevron';
-import CarouselIndicator from './CarouselIndicator';
 import SlidingFeature from './SlidingFeature';
 type FeaturedProps = {
   data: PublicationType[];
