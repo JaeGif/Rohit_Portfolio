@@ -16,7 +16,7 @@ function DescriptiveContainer({ data }: DescriptiveContainerProps) {
         transition: { stiffness: 100 },
       }}
       exit={{ y: -50, opacity: 0 }}
-      className='w-full pl-2 pr-2 pb-1 flex justify-between items-center text-black bg-slate-100 rounded-b-md'
+      className='w-full pl-2 pr-2 pb-1 flex justify-between items-center gap-2 text-black bg-slate-100'
     >
       <div className=''>
         {data.authors && (
@@ -24,7 +24,7 @@ function DescriptiveContainer({ data }: DescriptiveContainerProps) {
             <p>
               {data.authors.map((author, i) => (
                 <em
-                  className={`text-xs ${
+                  className={`text-[.5rem] ${
                     author === 'Rohit Mallick' ? 'font-bold' : ''
                   }`}
                   key={uniqid()}
@@ -42,12 +42,12 @@ function DescriptiveContainer({ data }: DescriptiveContainerProps) {
           <a href={data.src} target='_blank' rel='noreferrer' className='z-30'>
             <motion.button
               whileHover={{ scale: 1.1 }}
-              className='border-2 border-black p-1 rounded-md flex justify-center items-center gap-2'
+              className='text-xs border-2 border-black p-1 rounded-md flex justify-center items-center gap-1'
             >
               Article
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                height='24'
+                height='18'
                 viewBox='0 96 960 960'
                 width='24'
               >
