@@ -18,7 +18,9 @@ function FeaturedElement({ data, index, current }: FeaturedElementProps) {
     <motion.div
       animate={{ scale: isCurrent ? 1.075 : 1 }}
       className={`relative h-full w-full flex-col justify-center items-center rounded-lg cursor-pointer  ${
-        isCurrent ? 'shadow-lg overflow-hidden' : 'shadow-md overflow-hidden'
+        isCurrent
+          ? 'z-10 shadow-lg overflow-hidden'
+          : 'shadow-md overflow-hidden'
       }`}
     >
       {!isCurrent && (
@@ -27,7 +29,7 @@ function FeaturedElement({ data, index, current }: FeaturedElementProps) {
       <motion.img
         src={data.image}
         alt='placeholder'
-        className={`w-full object-contain`}
+        className={`min-w-full object-contain`}
       />
       <AnimatePresence>
         {isCurrent && <DescriptiveContainer data={data} />}

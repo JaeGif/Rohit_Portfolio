@@ -14,26 +14,26 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   const [current, setCurrent] = useState(Math.floor(data.length / 2));
   const [translateX, setTranslateX] = useState(0);
   const [width, setWidth] = useState(25);
-  const [gap, setGap] = useState(1);
+
   const handleChangeIndex = (clickedIndex: number) => {
     if (clickedIndex === current) return;
 
     const distance = current - clickedIndex;
 
-    const travel = distance * (width + gap);
+    const travel = distance * width;
     setTranslateX((prev) => prev + travel);
     setCurrent(clickedIndex);
   };
 
   const incIndex = () => {
     if (current !== data.length - 1) {
-      setTranslateX((prev) => prev + (width + gap));
+      setTranslateX((prev) => prev + width);
       setCurrent((prev) => prev + 1);
     }
   };
   const decIndex = () => {
     if (current !== 0) {
-      setTranslateX((prev) => prev - (width + gap));
+      setTranslateX((prev) => prev - width);
       setCurrent((prev) => prev - 1);
     }
   };
@@ -41,13 +41,13 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   return (
     <span className='w-full h-full flex justify-center items-center'>
       <div
-        className={`flex justify-center items-center w-[${
-          width * 3 + (gap / 2) * 3
-        }vw] h-full overflow-hidden`}
+        className={`flex justify-center items-center overflow-hidden w-[${
+          width * 3
+        }vw] h-full`}
       >
         <motion.div
           animate={{ x: `${translateX}vw` }}
-          className={`flex justify-center w-fit items-center gap-[${gap}vw]`}
+          className={`flex justify-center w-full items-center`}
         >
           {data.map((publication, i) => (
             <div

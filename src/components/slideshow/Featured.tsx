@@ -14,7 +14,7 @@ type FeaturedProps = {
 function Featured({ data }: FeaturedProps) {
   return (
     <div className='flex justify-center items-start w-screen h-full'>
-      <div className='flex w-full h-full justify-around items-center p-10 gap-2'>
+      <div className='flex w-full h-full justify-around items-center p-10'>
         <SlidingFeature data={data} />
       </div>
     </div>
