@@ -30,7 +30,7 @@ function CarouselIndicator({
       bubbles.push(
         <div
           key={uniqid()}
-          className={`h-2 w-2 rounded-xl ${
+          className={`w-1 h-1 sm:h-2 sm:w-2 rounded-xl ${
             index === i ? 'bg-blue-500' : 'bg-gray-400'
           }`}
         >
@@ -48,7 +48,7 @@ function CarouselIndicator({
       {data && handleDecIndex && <LeftChevron decIndex={handleDecIndex} />}
       <span
         className={`flex h-full justify-center items-center ${
-          data ? 'gap-4' : 'gap-2'
+          data ? 'gap-4' : 'gap-1 sm:gap-2'
         }`}
       >
         {!data
