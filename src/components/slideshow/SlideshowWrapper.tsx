@@ -22,7 +22,7 @@ function SlideshowWrapper() {
     <div className='h-full w-full'>
       {featured && (
         <div className='flex flex-col h-screen'>
-          <h1 className='text-black pl-10'>Featured</h1>
+          <h1 className='pl-10'>Featured</h1>
           <Featured data={featured} />
         </div>
       )}

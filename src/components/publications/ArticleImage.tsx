@@ -6,7 +6,7 @@ type ArticleImageProps = {
 };
 function ArticleImage({ src }: ArticleImageProps) {
   return (
-    <div className='h-fit w-fit shadow-md overflow-hidden'>
+    <div className='hidden md:flex h-fit w-fit shadow-md overflow-hidden'>
       <img src={src} className='h-full w-full' alt='article' />
     </div>
   );

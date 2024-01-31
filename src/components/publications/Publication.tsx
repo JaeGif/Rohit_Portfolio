@@ -10,9 +10,9 @@ type PublicationProps = {
 
 function Publication({ data }: PublicationProps) {
   return (
-    <div className='max-h-full flex p-4 justify-between items center sm:w-3/4 w-full bg-white opacity-100 rounded-lg text-black gap-10 shadow-lg shadow-black'>
-      <span className='max-h-full flex flex-col w-2/3 overflow-hidden'>
-        <h2 className='text-xl pr-2'>{data.title}</h2>
+    <div className='max-h-screen flex flex-col md:flex-row p-4 items-center justify-between md:w-3/4 w-full bg-white opacity-100 rounded-lg text-black gap-10 shadow-lg'>
+      <span className='max-h-screen flex flex-col md:w-2/3 w-full overflow-hidden'>
+        <h2 className='text-xl pt-2'>{data.title}</h2>
         <p>
           <em>{data.publisher}</em>
         </p>
@@ -34,7 +34,7 @@ function Publication({ data }: PublicationProps) {
         )}
       </span>
       {data.src && (
-        <div className='flex flex-col justify-center items-center gap-2 w-1/3'>
+        <div className='flex flex-col justify-center items-center gap-2 md:w-1/3 w-full'>
           <ArticleImage src={data.image} />
           {data.authors && (
             <span>
