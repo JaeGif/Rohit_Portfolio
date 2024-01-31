@@ -12,7 +12,7 @@ function Slideshow({ data }: SlideshowProps) {
   const [currentData, setCurrentData] = useState<PublicationType>(data[0]);
   const [index, setIndex] = useState(0);
   const isMobile = useMediaQuery('(max-width: 768px)');
-  console.log(isMobile);
+
   const handleChangeIndex = (incIndex: number) => {
     setIndex(incIndex);
   };

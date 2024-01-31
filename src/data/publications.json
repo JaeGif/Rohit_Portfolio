@@ -34,7 +34,7 @@
         "Rohit Mallick",
         "Kapil Chalil Madathil"
       ],
-      "featured": true,
+      "featured": false,
       "image": "/assets/papers/ExaminingTheImpact.jpg",
       "abstract": "The implementation of AI teammates is creating a wealth of research that examines how AI teammates impact human-AI teams. However, AI teammates themselves are not static, and their roles and responsibilities in human-AI teams are likely to change as technologies advance in the coming years. As a result of this advancement, AI teammates will gain influence in teams, which refers to their ability to change and manipulate a team’s shared resources. This study uses a mixed-methods experiment to examine how the amount of influence AI teammates have on a team’s shared resources can impact the team outcomes of human teammate performance, teammate perceptions, and whole-team perception. Results indicate that AI teammates that increase their influence on shared resources over time can stagnate the improvement of human performance, but AI teammates that decrease their influence on shared resources can actually encourage humans to improve their own performance. Additionally, AI teammates that are highly influential on shared resources can make humans perceive a greater cognitive workload. However, qualitative results indicate that these impacts on human performance and perception do not consistently impact the acceptance humans form for AI teammates. Rather, humans form acceptance for AI teammates if said AI use its influence to manipulate resources to benefit the personal goals of human teammates. These results have critical implications for human-AI teaming as it shows that the influence AI teammates have on shared resources can be designed in a way that improves human performance. However, future research is going to need to focus more critically on how the personal goals humans have, which may not align with a team’s overall goals, are going to mediate the effectiveness of the AI teammate influence."
     },
@@ -43,7 +43,7 @@
       "publisher": "Proceedings of the ACM on Human-Computer Interaction",
       "src": "https://doi.org/10.1145/3492832",
       "year": 2022,
-      "reviewed": true,
+      "reviewed": false,
       "type": "Journal",
       "authors": [
         "Beau G. Schelble",
@@ -52,7 +52,7 @@
         "Guo Freeman",
         "Rohit Mallick"
       ],
-      "featured": true,
+      "featured": false,
       "image": "/assets/papers/LetsThinkTogether.jpg",
       "abstract": "An emerging research agenda in Computer-Supported Cooperative Work focuses on human-agent teaming and AI agent's roles and effects in modern teamwork. In particular, one understudied key question centers around the construct of team cognition within human-agent teams. This study explores the unique nature of team dynamics in human-agent teams compared to human-human teams and the impact of team composition on perceived team cognition, team performance, and trust. In doing so, a mixed-method approach, including three team composition conditions (all human, human-human-agent, human-agent-agent), completed the team simulation NeoCITIES and completed shared mental model, trust, and perception measures. Results found that human-agent teams are similar to human-only teams in the iterative development of team cognition and the importance of communication to accelerating its development; however, human-agent teams are different in that action-related communication and explicitly shared goals are beneficial to developing team cognition. Additionally, human-agent teams trusted agent teammates less when working with only agents and no other humans, perceived less team cognition with agent teammates than human ones, and had significantly inconsistent levels of team mental model similarity when compared to human-only teams. This study contributes to Computer-Supported Cooperative Work in three significant ways: 1) advancing the existing research on human-agent teaming by shedding light on the relationship between humans and agents operating in collaborative environments, 2) characterizing team cognition development in human-agent teams; and 3) advancing real-world design recommendations that promote human-centered teaming agents and better integrate the two."
     },

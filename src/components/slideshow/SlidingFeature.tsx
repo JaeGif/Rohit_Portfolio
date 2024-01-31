@@ -12,8 +12,12 @@ type SlidingFeatureProps = {
 function SlidingFeature({ data }: SlidingFeatureProps) {
   // scale needs to be smaller for things on eithere side of the shown element
   // opacity also needs to be smaller
-  const [current, setCurrent] = useState(Math.floor(data.length / 2));
-  const [translateX, setTranslateX] = useState(0);
+  const isEven = data.length % 2 === 0;
+  console.log(isEven, data.length);
+  const [current, setCurrent] = useState(
+    isEven ? 0 : Math.floor(data.length / 2)
+  );
+  const [translateX, setTranslateX] = useState(isEven ? 25 : 0);
   const width = 25;
   const handleChangeIndex = (clickedIndex: number) => {
     if (clickedIndex === current) return;
@@ -42,11 +46,15 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
     <span className='w-full h-full flex justify-center items-center gap-5'>
       {current > 0 && <LeftChevron decIndex={decIndex} />}
       <div
-        className={`flex justify-center items-center w-[75vw] h-full bg-slate-50 rounded-xl overflow-hidden`}
+        className={
+          'flex justify-center items-center w-[75vw] h-full bg-slate-50 rounded-xl overflow-hidden'
+        }
       >
         <motion.div
           animate={{ x: `${translateX}vw` }}
-          className={`flex justify-center w-full items-center`}
+          className={`flex ${
+            isEven ? 'justify-start' : 'justify-center'
+          } w-full items-center`}
         >
           {data.map((publication, i) => (
             <div
