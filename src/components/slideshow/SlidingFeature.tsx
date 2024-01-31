@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import FeaturedElement from './FeaturedElement';
 import { PublicationType } from '@/types/data';
 import uniqid from 'uniqid';
+import LeftChevron from './LeftChevron';
+import RightChevron from './RightChevron';
 
 type SlidingFeatureProps = {
   data: PublicationType[];
@@ -25,21 +27,22 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
 
   const incIndex = () => {
     if (current !== data.length - 1) {
-      setTranslateX((prev) => prev + width);
+      setTranslateX((prev) => prev - width);
       setCurrent((prev) => prev + 1);
     }
   };
   const decIndex = () => {
     if (current !== 0) {
-      setTranslateX((prev) => prev - width);
+      setTranslateX((prev) => prev + width);
       setCurrent((prev) => prev - 1);
     }
   };
 
   return (
-    <span className='w-full h-full flex justify-center items-center'>
+    <span className='w-full h-full flex justify-center items-center gap-5'>
+      {current > 0 && <LeftChevron decIndex={decIndex} />}
       <div
-        className={`flex justify-center items-center w-[75vw] h-full overflow-hidden`}
+        className={`flex justify-center items-center w-[75vw] h-full bg-slate-50 rounded-xl overflow-hidden`}
       >
         <motion.div
           animate={{ x: `${translateX}vw` }}
@@ -56,6 +59,7 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
           ))}
         </motion.div>
       </div>
+      {current < data.length - 1 && <RightChevron incIndex={incIndex} />}
     </span>
   );
 }
