@@ -8,7 +8,10 @@ type FeaturedElementProps = {
   index: number;
   current: number;
 };
+import useMediaQuery from '@/hooks/useMediaQuery';
 function FeaturedElement({ data, index, current }: FeaturedElementProps) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   const [isCurrent, setIsCurrent] = useState(false);
   useEffect(() => {
     console.log(index, isCurrent);
@@ -16,10 +19,10 @@ function FeaturedElement({ data, index, current }: FeaturedElementProps) {
   }, [index, current, isCurrent]);
   return (
     <motion.div
-      animate={{ scale: isCurrent ? 1.075 : 1 }}
+      animate={{ scale: isCurrent && !isMobile ? 1.075 : 1 }}
       className={`relative h-full min-w-full flex-col justify-center items-center rounded-lg cursor-pointer  ${
-        isCurrent
-          ? 'z-10 shadow-lg overflow-hidden border-4 border-blue-300'
+        isCurrent && !isMobile
+          ? 'z-10 shadow-lg overflow-hidden border-2 border-blue-300'
           : 'shadow-md overflow-hidden'
       }`}
     >

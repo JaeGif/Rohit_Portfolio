@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 type RightChevronProps = {
   incIndex: Function;
 };
+import useMediaQuery from '@/hooks/useMediaQuery';
 function RightChevron({ incIndex }: RightChevronProps) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <motion.div
       whileHover={{ transform: 'translateX(10px)' }}
@@ -14,9 +17,9 @@ function RightChevron({ incIndex }: RightChevronProps) {
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        height='48'
+        height={isMobile ? '32' : '48'}
         viewBox='0 -960 960 960'
-        width='48'
+        width={isMobile ? '32' : '48'}
       >
         <path
           fill='#000'

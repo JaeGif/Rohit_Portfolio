@@ -5,6 +5,7 @@ import { PublicationType } from '@/types/data';
 import uniqid from 'uniqid';
 import LeftChevron from './LeftChevron';
 import RightChevron from './RightChevron';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 type SlidingFeatureProps = {
   data: PublicationType[];
@@ -12,13 +13,17 @@ type SlidingFeatureProps = {
 function SlidingFeature({ data }: SlidingFeatureProps) {
   // scale needs to be smaller for things on eithere side of the shown element
   // opacity also needs to be smaller
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   const isEven = data.length % 2 === 0;
-  console.log(isEven, data.length);
+
   const [current, setCurrent] = useState(
     isEven ? 0 : Math.floor(data.length / 2)
   );
-  const [translateX, setTranslateX] = useState(isEven ? 25 : 0);
-  const width = 25;
+  const [translateX, setTranslateX] = useState(
+    isEven ? (isMobile ? 75 : 25) : 0
+  );
+  const width = isMobile ? 75 : 25;
   const handleChangeIndex = (clickedIndex: number) => {
     if (clickedIndex === current) return;
 
@@ -43,7 +48,13 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
   };
 
   return (
-    <span className='w-full h-full flex justify-center items-center gap-5'>
+    <span
+      className={
+        isMobile
+          ? 'w-full h-full flex justify-center items-center gap-1'
+          : 'w-full h-full flex justify-center items-center gap-5'
+      }
+    >
       {current > 0 && <LeftChevron decIndex={decIndex} />}
       <div
         className={
@@ -59,7 +70,11 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
           {data.map((publication, i) => (
             <div
               onClick={() => handleChangeIndex(i)}
-              className={`h-full w-[25vw] min-w-[25vw]`}
+              className={
+                isMobile
+                  ? `h-full w-[75vw] min-w-[75vw]`
+                  : `h-full w-[25vw] min-w-[25vw]`
+              }
               key={uniqid()}
             >
               <FeaturedElement data={publication} index={i} current={current} />

@@ -3,7 +3,11 @@ import { motion } from 'framer-motion';
 type LeftChevronProps = {
   decIndex: Function;
 };
+import useMediaQuery from '@/hooks/useMediaQuery';
+
 function LeftChevron({ decIndex }: LeftChevronProps) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <motion.div
       whileHover={{ transform: 'translateX(-10px)' }}
@@ -14,9 +18,9 @@ function LeftChevron({ decIndex }: LeftChevronProps) {
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        height='48'
+        height={isMobile ? '32' : '48'}
         viewBox='0 -960 960 960'
-        width='48'
+        width={isMobile ? '32' : '48'}
       >
         <path
           fill='#000'
