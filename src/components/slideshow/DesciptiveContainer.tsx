@@ -16,29 +16,27 @@ function DescriptiveContainer({ data }: DescriptiveContainerProps) {
         transition: { stiffness: 100 },
       }}
       exit={{ y: -50, opacity: 0 }}
-      className='w-full pl-2 pr-2 pb-1 flex justify-between items-center gap-2 text-black bg-slate-100'
+      className='w-full pl-2 pr-2 pb-1 flex md:flex-row flex-col text-center justify-between items-center gap-2 bg-slate-50'
     >
-      <div className=''>
-        {data.authors && (
-          <span>
-            <p>
-              {data.authors.map((author, i) => (
-                <em
-                  className={`text-[.5rem] ${
-                    author === 'Rohit Mallick' ? 'font-bold' : ''
-                  }`}
-                  key={uniqid()}
-                >
-                  {author}
-                  {i < data.authors.length - 1 && ', '}
-                </em>
-              ))}
-            </p>
-          </span>
-        )}
-      </div>
+      {data.authors && (
+        <span className='leading-3'>
+          <p className=''>
+            {data.authors.map((author, i) => (
+              <em
+                className={`text-[.5rem] ${
+                  author === 'Rohit Mallick' ? 'font-bold' : ''
+                }`}
+                key={uniqid()}
+              >
+                {author}
+                {i < data.authors.length - 1 && ', '}
+              </em>
+            ))}
+          </p>
+        </span>
+      )}
       {data.src && (
-        <span className='w-1/4'>
+        <span className='w-full flex justify-center md:w-1/4 '>
           <a href={data.src} target='_blank' rel='noreferrer' className='z-30'>
             <motion.button
               whileHover={{ scale: 1.1 }}
