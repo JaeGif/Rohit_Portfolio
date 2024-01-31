@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-
 import data from '../../../data/about.json';
 import Under from './Under';
 import Over from './Over';
+
 function GalleryContainer() {
   const gallery = data.gallery;
   const [isUnderOver, setIsUnderOver] = useState(false);

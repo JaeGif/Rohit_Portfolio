@@ -8,6 +8,7 @@ function about() {
       <h1 className='flex justify-center'>About Me.</h1>
       <PersonalDescription />
       <Education />
+
       <Hobbies />
     </div>
   );
