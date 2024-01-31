@@ -4,11 +4,12 @@ import Featured from './Featured';
 import publicationDataset from '../../data/publications.json';
 import { PublicationType } from '@/types/data';
 import Slideshow from './Slideshow';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 function SlideshowWrapper() {
   const data = publicationDataset.publications;
   const [featured, setFeatured] = useState<PublicationType[]>();
-
+  const isMobile = useMediaQuery('(max-width: 768px)');
   useEffect(() => {
     if (featured) return;
     let featuredTemp = [];
@@ -21,8 +22,12 @@ function SlideshowWrapper() {
   return (
     <div className='h-full w-full'>
       {featured && (
-        <div className='flex flex-col h-screen'>
-          <h1 className='pl-10'>Featured</h1>
+        <div
+          className={
+            'flex flex-col md:items-start items-center gap-5 md:gap-0 md:h-screen'
+          }
+        >
+          <h1 className={'p-0 md:pl-10'}>Featured</h1>
           <Featured data={featured} />
         </div>
       )}
