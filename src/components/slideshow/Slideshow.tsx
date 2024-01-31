@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CurrentSlide from './CurrentSlide';
 import Carousel from './Carousel';
 import CarouselIndicator from './CarouselIndicator';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 type SlideshowProps = {
   data: PublicationType[];
@@ -10,7 +11,8 @@ type SlideshowProps = {
 function Slideshow({ data }: SlideshowProps) {
   const [currentData, setCurrentData] = useState<PublicationType>(data[0]);
   const [index, setIndex] = useState(0);
-
+  const isMobile = useMediaQuery('(max-width: 768px)');
+  console.log(isMobile);
   const handleChangeIndex = (incIndex: number) => {
     setIndex(incIndex);
   };
@@ -38,6 +40,11 @@ function Slideshow({ data }: SlideshowProps) {
           data={data}
           length={data.length}
           index={index}
+          options={{
+            vHeight: 15,
+            description: false,
+            absCount: isMobile ? 1 : 3,
+          }}
         />
       </div>
       <CarouselIndicator length={data.length} index={index} />
