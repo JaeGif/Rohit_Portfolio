@@ -4,7 +4,7 @@ function PersonalDescription() {
   return (
     <div id='about' className='flex flex-col w-full'>
       <h1>Biography</h1>
-      <span className='w-full flex justify-center items-center gap-10'>
+      <span className='w-full flex md:flex-row flex-col justify-center items-center gap-10'>
         <div className='flex w-full justify-start flex-col gap-2'>
           <p>
             Hiya! My name is Rohit Mallick and I’m from Bel Air, Maryland. My
