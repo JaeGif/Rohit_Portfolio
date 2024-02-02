@@ -4,12 +4,10 @@ import Featured from './Featured';
 import publicationDataset from '../../data/publications.json';
 import { PublicationType } from '@/types/data';
 import Slideshow from './Slideshow';
-import useMediaQuery from '@/hooks/useMediaQuery';
 
 function SlideshowWrapper() {
   const data = publicationDataset.publications;
   const [featured, setFeatured] = useState<PublicationType[]>();
-  const isMobile = useMediaQuery('(max-width: 768px)');
   useEffect(() => {
     if (featured) return;
     let featuredTemp = [];
