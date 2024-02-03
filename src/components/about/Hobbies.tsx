@@ -5,7 +5,9 @@ import Hint from './gallery/Hint';
 function Hobbies() {
   return (
     <div className='flex flex-col'>
-      <h1>Gallery</h1>
+      <span className='flex md:justify-start justify-center items-center w-full'>
+        <h1>Gallery</h1>
+      </span>
       <Hint />
       <GalleryContainer />
     </div>

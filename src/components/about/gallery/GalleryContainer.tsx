@@ -2,20 +2,33 @@ import React, { useState } from 'react';
 import data from '../../../data/about.json';
 import Under from './Under';
 import Over from './Over';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import MobileGallery from './MobileGallery';
 
 function GalleryContainer() {
   const gallery = data.gallery;
   const [isUnderOver, setIsUnderOver] = useState(false);
+  const isMobileSmall = useMediaQuery('(max-width: 600px)');
   return (
     <div
       onClick={() => setIsUnderOver((prev) => !isUnderOver)}
-      className='relative w-full h-screen overflow-scroll no-scrollbar'
+      className={
+        isMobileSmall
+          ? 'max-h-[300px] overflow-scroll no-scrollbar'
+          : 'relative w-full h-screen overflow-scroll no-scrollbar'
+      }
     >
-      <Under
-        foreground={isUnderOver}
-        data={gallery.slice(gallery.length / 3)}
-      />
-      <Over data={gallery.slice(gallery.length / 3, -1)} />
+      {isMobileSmall ? (
+        <MobileGallery data={gallery} />
+      ) : (
+        <>
+          <Under
+            foreground={isUnderOver}
+            data={gallery.slice(gallery.length / 3)}
+          />
+          <Over data={gallery.slice(gallery.length / 3, -1)} />
+        </>
+      )}
     </div>
   );
 }
