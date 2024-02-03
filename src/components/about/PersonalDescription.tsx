@@ -3,7 +3,6 @@ import Image from 'next/image';
 function PersonalDescription() {
   return (
     <div id='about' className='flex flex-col w-full'>
-      <h1>Biography</h1>
       <span className='w-full flex md:flex-row flex-col justify-center items-center gap-10'>
         <div className='flex w-full justify-start flex-col gap-2'>
           <p>
@@ -33,7 +32,7 @@ function PersonalDescription() {
           </p>
         </div>
         <Image
-          className='w-1/3'
+          className='md:w-1/3 w-full'
           src={'/assets/rohit.jpg'}
           alt='rohit'
           height={300}
