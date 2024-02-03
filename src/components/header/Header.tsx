@@ -8,34 +8,45 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 function Header() {
   const router = useRouter();
   const [urlParam, setUrlParam] = useState('/');
-  const isMobile = useMediaQuery('max-width: 768px');
+  const isMobile = useMediaQuery('(max-width: 768px)');
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     if (router.isReady) {
       setUrlParam(router.route);
     }
   }, [router]);
-  const [isOpen, setIsOpen] = useState(isMobile ? false : true);
   const toggleMenu = () => {
+    console.log('tog');
     setIsOpen((prev) => !prev);
+    console.log(isOpen);
   };
   return (
-    <header className='w-full flex px-28 py-3 justify-between'>
+    <header className='relative w-full flex md:px-28 md:py-3 justify-between'>
       {isMobile ? (
-        <div className='bg-black'>
-          <svg
-            className='hover:cursor-pointer'
-            onClick={() => toggleMenu()}
-            xmlns='http://www.w3.org/2000/svg'
-            height='32'
-            viewBox='0 96 960 960'
-            width='32'
-          >
-            <path
-              fill={'#000000'}
-              d='M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z'
-            />
-          </svg>
-        </div>
+        isOpen ? (
+          <div className='h-screen w-screen fixed top-0 left-0'>
+            <Navigation toggleMenu={toggleMenu} isOpen={isOpen} />
+          </div>
+        ) : (
+          <div className='w-full p-3 flex'>
+            <div className='hover:bg-gray-200 rounded-md p-1'>
+              <svg
+                className='hover:cursor-pointer hover:bg-gray-200 rounded-sm'
+                onClick={() => toggleMenu()}
+                xmlns='http://www.w3.org/2000/svg'
+                height='32'
+                viewBox='0 96 960 960'
+                width='32'
+              >
+                <path
+                  fill={'#000000'}
+                  d='M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z'
+                />
+              </svg>
+            </div>
+          </div>
+        )
       ) : (
         <Navigation isOpen={isOpen} />
       )}
