@@ -22,14 +22,14 @@ function SlideshowWrapper() {
       {featured && (
         <div
           className={
-            'flex flex-col md:items-start items-center gap-5 md:gap-0 md:h-screen'
+            'flex flex-col justify-center items-center gap-5 md:gap-0 md:h-screen'
           }
         >
-          <h1 className={'p-0 md:pl-10'}>Featured</h1>
+          <h1>Featured</h1>
           <Featured data={featured} />
         </div>
       )}
-      <div className='flex flex-col'>
+      <div className='flex flex-col justify-center items-center'>
         <h1 className='p-10'>Publications</h1>
         <Slideshow data={data} />
       </div>
