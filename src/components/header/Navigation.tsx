@@ -21,7 +21,7 @@ function Navigation({ isOpen = false, toggleMenu }: NavigationProps) {
     <nav
       className={
         isOpen
-          ? 'flex flex-col w-full h-full bg-white z-50 justify-center items-center gap-10 md:gap-8 text-2xl'
+          ? 'flex flex-col w-full h-full bg-white justify-center items-center gap-10 md:gap-8 text-2xl'
           : 'flex w-1/3 justify-start gap-3 md:gap-8 text-lg'
       }
     >

@@ -25,7 +25,7 @@ function Header() {
     <header className='relative w-full flex md:px-28 md:py-3 justify-between'>
       {isMobile ? (
         isOpen ? (
-          <div className='h-screen w-screen fixed top-0 left-0'>
+          <div className='h-screen w-screen fixed top-0 left-0 z-50'>
             <Navigation toggleMenu={toggleMenu} isOpen={isOpen} />
           </div>
         ) : (
