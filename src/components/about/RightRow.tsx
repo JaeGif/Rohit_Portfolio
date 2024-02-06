@@ -8,17 +8,17 @@ type RightRowProps = {
 // takes a truncated data array
 function RightRow({ data }: RightRowProps) {
   return (
-    <div className='flex gap-40 overflow-hidden w-screen'>
+    <div className='flex md:gap-40 gap-10 overflow-hidden w-screen'>
       {data.map((img) => (
         <motion.div
-          animate={{ x: 500 }}
+          animate={{ x: 300 }}
           transition={{
             ease: 'linear',
-            duration: 20,
+            duration: 15,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
-          className='hover:brightness-110 hover:cursor-pointer overflow-hidden'
+          className='hover:brightness-110 flex justify-center items-center'
           key={uniqid()}
         >
           <img

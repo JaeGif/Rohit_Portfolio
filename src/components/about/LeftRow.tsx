@@ -8,17 +8,17 @@ type LeftRowProps = {
 // takes a truncated data array
 function LeftRow({ data }: LeftRowProps) {
   return (
-    <div className='flex gap-40 overflow-hidden w-screen'>
+    <div className='flex md:gap-40 gap-10 overflow-hidden w-screen'>
       {data.map((img) => (
         <motion.div
-          animate={{ x: -500 }}
+          animate={{ x: -200 }}
           transition={{
             ease: 'linear',
-            duration: 20,
+            duration: 10,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
-          className='hover:brightness-110 hover:cursor-pointer'
+          className='hover:brightness-110 flex justify-center items-center'
           key={uniqid()}
         >
           <img
