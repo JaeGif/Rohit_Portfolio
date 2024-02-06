@@ -52,19 +52,19 @@ The type file is READ ONLY
 Do not edit the type file without consulting me first, the site will not compil
 If you want to add new fields, that can be done, but multiple files will need changing so please consult me first
 
-# ----- ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!! -----
+# ----- ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
 
-### ----- PUSH CHANGES LiVE -----
+### ----- PUSH CHANGES LIVE -----
 
 Once you've made your local changes and it looks good, you'll need to commit the changes to GitHub for the changes to take effect in your live site.
 
 # ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
 
-## ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
+## ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!
 
-### ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
+### ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!
 
-#### ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
+#### ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING
 
 Anyway if you've viewed your site locally before committing, go ahead and commit using the commands in the terminal
 
