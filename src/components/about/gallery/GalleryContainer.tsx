@@ -15,8 +15,8 @@ function GalleryContainer() {
       onClick={() => setIsUnderOver((prev) => !isUnderOver)}
       className={
         isMobileSmall
-          ? 'max-h-[300px] overflow-scroll no-scrollbar'
-          : 'relative w-full h-screen'
+          ? 'max-h-[300px] overflow-hidden no-scrollbar'
+          : 'relative w-full h-screen overflow-hidden'
       }
     >
       {isMobileSmall ? (
@@ -25,7 +25,7 @@ function GalleryContainer() {
         <>
           <Under
             foreground={isUnderOver}
-            data={gallery.slice(gallery.length / 3)}
+            data={gallery.slice(0, gallery.length / 3)}
           />
           <Over
             foreground={!isUnderOver}

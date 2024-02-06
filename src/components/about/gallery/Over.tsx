@@ -20,7 +20,7 @@ function Over({ data, foreground }: OverProps) {
         <motion.div
           animate={foreground ? { scale: 1 } : { scale: 0.9 }}
           key={uniqid()}
-          className='p-1 bg-white shadow-xl w-fit h-fit'
+          className={'p-1 bg-white shadow-xl w-fit h-fit'}
         >
           <Image src={image.src} alt='hobby image' height={500} width={500} />
         </motion.div>
