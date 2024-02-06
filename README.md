@@ -42,14 +42,14 @@ To add new photos:
 2. Name it whatever you'd like
 3. Open src/data/about.json
 4. Add a new entry to about.json (photos are rendered in order, so if you want a photo higher in the gallery reorder about.json)
-5. Entries follow the format: {"src": "<URL>"}, "<URL>" ===> "/assets/gallery/'<FILENAME>'" Every field except the laast field needs a comma after it.
+5. Entries follow the format: {"src": "URL"}, "URL" ===> "/assets/gallery/'FILENAME'" Every field except the laast field needs a comma after it.
 6. Save changes, run the site locally to make sure it looks how you'd like it to
 
 ----- FIELD TYPES -----
 You can only edit publications.json with the correct field types. If you enter a number in a string field it will break
 Types can be found at src/types/data.d.ts
 The type file is READ ONLY
-Do not edit the type file without consulting me first, the site will not compil
+Do not edit the type file without consulting me first, the site will not compile
 If you want to add new fields, that can be done, but multiple files will need changing so please consult me first
 
 # ----- ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
