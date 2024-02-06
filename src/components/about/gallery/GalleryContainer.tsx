@@ -9,13 +9,14 @@ function GalleryContainer() {
   const gallery = data.gallery;
   const [isUnderOver, setIsUnderOver] = useState(false);
   const isMobileSmall = useMediaQuery('(max-width: 600px)');
+
   return (
     <div
       onClick={() => setIsUnderOver((prev) => !isUnderOver)}
       className={
         isMobileSmall
           ? 'max-h-[300px] overflow-scroll no-scrollbar'
-          : 'relative w-full h-screen overflow-scroll no-scrollbar'
+          : 'relative w-full h-screen'
       }
     >
       {isMobileSmall ? (
@@ -26,7 +27,10 @@ function GalleryContainer() {
             foreground={isUnderOver}
             data={gallery.slice(gallery.length / 3)}
           />
-          <Over data={gallery.slice(gallery.length / 3, -1)} />
+          <Over
+            foreground={!isUnderOver}
+            data={gallery.slice(gallery.length / 3, -1)}
+          />
         </>
       )}
     </div>

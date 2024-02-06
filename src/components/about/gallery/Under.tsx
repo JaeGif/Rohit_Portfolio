@@ -10,7 +10,7 @@ function Under({ data, foreground }: UnderProps) {
   return (
     <motion.div
       className={`absolute top-[5%] gap-[5%] w-full ${
-        foreground ? 'z-30' : 'z-10'
+        foreground ? 'z-30 overflow-scroll' : 'z-10 overflow-hidden'
       } grid grid-cols-2 justify-center items-center h-full`}
     >
       {data.map((image) => (
@@ -19,13 +19,7 @@ function Under({ data, foreground }: UnderProps) {
           key={uniqid()}
           className={`p-2 bg-white shadow-xl w-fit`}
         >
-          <Image
-            loading='lazy'
-            src={image.src}
-            alt='hobby image'
-            height={700}
-            width={700}
-          />
+          <Image src={image.src} alt='hobby image' height={700} width={700} />
         </motion.div>
       ))}
     </motion.div>
