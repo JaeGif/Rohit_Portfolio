@@ -15,8 +15,8 @@ function GalleryContainer() {
       onClick={() => setIsUnderOver((prev) => !isUnderOver)}
       className={
         isMobileSmall
-          ? 'max-h-[300px] overflow-hidden no-scrollbar'
-          : 'relative w-full h-screen overflow-hidden'
+          ? 'max-h-[300px] overflow-scroll no-scrollbar'
+          : 'relative w-full h-screen overflow-hidden flex justify-center items-center'
       }
     >
       {isMobileSmall ? (

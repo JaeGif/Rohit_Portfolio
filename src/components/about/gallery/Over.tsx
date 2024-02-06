@@ -12,19 +12,26 @@ function Over({ data, foreground }: OverProps) {
     <div
       className={
         foreground
-          ? 'absolute grid grid-cols-3 z-20 gap-[10%] p-10 pt-5 overflow-scroll'
-          : 'overflow-hidden grid grid-cols-3 z-20 gap-[10%] p-10 pt-5'
+          ? 'w-full h-[98%] overflow-scroll absolute z-20'
+          : 'w-full h-[98%] oveflow-hidden z-20'
       }
     >
-      {data.map((image) => (
-        <motion.div
-          animate={foreground ? { scale: 1 } : { scale: 0.9 }}
-          key={uniqid()}
-          className={'p-1 bg-white shadow-xl w-fit h-fit'}
-        >
-          <Image src={image.src} alt='hobby image' height={500} width={500} />
-        </motion.div>
-      ))}
+      <div className='justify-evenly justify-items-center content-evenly items-center grid grid-cols-3 gap-[1%]'>
+        {data.map((image) => (
+          <motion.div
+            animate={foreground ? { scale: 1 } : { scale: 0.9 }}
+            key={uniqid()}
+            className={'shadow-lg shadow-black w-fit h-fit'}
+          >
+            {foreground ? (
+              <></>
+            ) : (
+              <div className='h-full w-full absolute top-0 bg-[rgba(0,0,0,.4)] z-30'></div>
+            )}
+            <Image src={image.src} alt='hobby image' height={200} width={200} />
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
