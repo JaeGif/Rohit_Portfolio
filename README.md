@@ -12,7 +12,7 @@ After you have Node installed:
 2. In the command line type: `npm i`
 3. To run the site locally: `npm run dev`
 4. The command line will print the port it is being served from and you can either click the hyperlink from the command line
-   or you can go to your browser and navigate to localhost:<PORT> where <PORT> is the port it is served from. Next.js defaults to port 3000. If 3000 is busy, it will likely use 3001 and on and on until there is an open port.
+   or you can go to your browser and navigate to localhost:"<PORT>" where "<PORT>" is the port it is served from. Next.js defaults to port 3000. If 3000 is busy, it will likely use 3001 and on and on until there is an open port.
 
 After you make any changes, run the site locally before committing to see if it displays how you want it to.
 
@@ -42,7 +42,7 @@ To add new photos:
 2. Name it whatever you'd like
 3. Open src/data/about.json
 4. Add a new entry to about.json (photos are rendered in order, so if you want a photo higher in the gallery reorder about.json)
-5. Entries follow the format: {"src": <URL>}, <URL> ===> "/assets/gallery/<FILENAME>" Every field except the laast field needs a comma after it.
+5. Entries follow the format: {"src": "<URL>"}, "<URL>" ===> "/assets/gallery/'<FILENAME>'" Every field except the laast field needs a comma after it.
 6. Save changes, run the site locally to make sure it looks how you'd like it to
 
 ----- FIELD TYPES -----
