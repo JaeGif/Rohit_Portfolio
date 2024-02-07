@@ -18,12 +18,14 @@ function Under({ data, foreground }: UnderProps) {
           <motion.div
             animate={foreground ? { scale: 1 } : { scale: 0.9 }}
             key={uniqid()}
-            className={`shadow-xl w-fit h-fit relative`}
+            className={`shadow-xl w-fit h-fit relative p-1 ${
+              foreground ? 'bg-white' : 'bg-black'
+            }`}
           >
             {foreground ? (
               <></>
             ) : (
-              <div className='h-full w-full absolute top-0 bg-[rgba(0,0,0,.4)] z-30'></div>
+              <div className='h-full w-full absolute top-0 bg-[rgba(0,0,0,.7)] z-30'></div>
             )}
             <Image
               className='max-h-[600px] w-fit object-contain'

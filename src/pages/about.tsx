@@ -5,10 +5,9 @@ import Hobbies from '@/components/about/Hobbies';
 function about() {
   return (
     <div className='flex flex-col w-full p-16 gap-5'>
-      <h1 className='flex justify-center'>About Me.</h1>
+      <h1 className='flex justify-center'>About Me</h1>
       <PersonalDescription />
       <Education />
-
       <Hobbies />
     </div>
   );

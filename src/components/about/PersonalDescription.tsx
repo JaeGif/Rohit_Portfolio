@@ -6,20 +6,20 @@ function PersonalDescription() {
       <span className='w-full flex md:flex-row flex-col justify-center items-center gap-10'>
         <div className='flex w-full justify-start flex-col gap-2'>
           <p>
-            Hiya! My name is Rohit Mallick and I’m from Bel Air, Maryland. My
-            family has always been interested in exploring new places and
-            that&apos;s why I’m no different! I&apos;ve visited Western Europe,
-            India, Nepal, Singapore, Thailand and more! When it came time to
-            choose an undergraduate college I knew I needed to leave Maryland so
-            I ventured off and became a Purdue University Boilermaker. In May
-            2020 I successfully graduated with a Brain and Behavioral Sciences
-            bachelors and a minor in Computer Science. It was through my
-            experiences at Purdue and my summer internships at the U.S. Army
-            Research Lab that led me to Clemson&apos;s TRACE Lab to pursue
-            research as a career. Upon entering, I was astounded by the range of
-            research ideas and different disciplines working together cohesively
-            and efficiently. This was my first indication that I had made the
-            right choice.
+            Hiya! My name is Rohit Mallick and I&apos;m from Bel Air, Maryland.
+            My family has always been interested in exploring new places and
+            that&apos;s why I&apos;m no different! I&apos;ve visited Western
+            Europe, India, Nepal, Singapore, Thailand and more! When it came
+            time to choose an undergraduate college I knew I needed to leave
+            Maryland so I ventured off and became a Purdue University
+            Boilermaker. In May 2020 I successfully graduated with a Brain and
+            Behavioral Sciences bachelors and a minor in Computer Science. It
+            was through my experiences at Purdue and my summer internships at
+            the U.S. Army Research Lab that led me to Clemson&apos;s TRACE Lab
+            to pursue research as a career. Upon entering, I was astounded by
+            the range of research ideas and different disciplines working
+            together cohesively and efficiently. This was my first indication
+            that I had made the right choice.
           </p>
           <br />
           <p>

@@ -16,7 +16,7 @@ function GalleryContainer() {
       className={
         isMobileSmall
           ? 'max-h-[300px] overflow-scroll no-scrollbar'
-          : 'relative w-full h-screen overflow-hidden flex justify-center items-center'
+          : 'relative w-full h-screen overflow-hidden flex justify-center items-center border-2 border-black rounded-lg bg-black'
       }
     >
       {isMobileSmall ? (
