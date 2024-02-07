@@ -52,6 +52,15 @@ function Navigation({ isOpen = false, toggleMenu }: NavigationProps) {
       >
         Publications
       </Link>
+      <Link
+        onClick={() => {
+          toggleMenu && toggleMenu();
+        }}
+        className={urlParam === '/contact' ? 'text-blue-500' : ''}
+        href={'/contact'}
+      >
+        Contact
+      </Link>
       {isOpen && <Socials />}
     </nav>
   );
