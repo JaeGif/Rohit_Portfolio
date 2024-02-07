@@ -16,7 +16,7 @@ function DescriptiveContainer({ data }: DescriptiveContainerProps) {
         transition: { stiffness: 100 },
       }}
       exit={{ y: -50, opacity: 0 }}
-      className='w-full pl-2 pr-2 pb-1 flex md:flex-row flex-col text-center justify-between items-center gap-2 bg-slate-50'
+      className='w-full pl-2 pr-2 pb-2 flex md:flex-row flex-col text-center justify-between items-center gap-2 bg-slate-50'
     >
       {data.authors && (
         <span className='leading-3'>

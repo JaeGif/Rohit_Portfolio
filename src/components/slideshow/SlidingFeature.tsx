@@ -55,10 +55,13 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
           : 'w-full h-full flex justify-center items-center gap-5'
       }
     >
-      {current > 0 && <LeftChevron decIndex={decIndex} />}
+      <LeftChevron
+        shown={current > 0 ? 'visible' : 'invisible'}
+        decIndex={decIndex}
+      />
       <div
         className={
-          'flex justify-center items-center w-[75vw] h-full bg-slate-50 rounded-xl overflow-hidden'
+          'flex justify-center items-center w-[75vw] h-full bg-slate-200 border-4 border-slate-200 rounded-xl overflow-hidden'
         }
       >
         <motion.div
@@ -82,7 +85,10 @@ function SlidingFeature({ data }: SlidingFeatureProps) {
           ))}
         </motion.div>
       </div>
-      {current < data.length - 1 && <RightChevron incIndex={incIndex} />}
+      <RightChevron
+        shown={current < data.length - 1 ? 'visible' : 'invisible'}
+        incIndex={incIndex}
+      />
     </span>
   );
 }

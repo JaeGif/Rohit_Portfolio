@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 type RightChevronProps = {
   incIndex: Function;
+  shown: 'visible' | 'invisible';
 };
 import useMediaQuery from '@/hooks/useMediaQuery';
-function RightChevron({ incIndex }: RightChevronProps) {
+function RightChevron({ incIndex, shown }: RightChevronProps) {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
@@ -13,7 +14,7 @@ function RightChevron({ incIndex }: RightChevronProps) {
       onClick={() => {
         incIndex();
       }}
-      className='cursor-pointer h-full flex justify-center items-center'
+      className={`${shown} cursor-pointer h-full flex justify-center items-center`}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'

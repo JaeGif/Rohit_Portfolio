@@ -22,12 +22,12 @@ function FeaturedElement({ data, index, current }: FeaturedElementProps) {
       animate={{ scale: isCurrent && !isMobile ? 1.075 : 1 }}
       className={`relative h-full min-w-full flex-col justify-center items-center rounded-lg cursor-pointer  ${
         isCurrent && !isMobile
-          ? 'z-10 shadow-lg overflow-hidden border-2 border-blue-300'
+          ? 'z-10 shadow-lg overflow-hidden'
           : 'shadow-md overflow-hidden'
       }`}
     >
       {!isCurrent && (
-        <div className='absolute top-0 left-0 h-full min-w-full bg-black opacity-[7.5%] hover:opacity-5 rounded-lg'></div>
+        <div className='absolute top-0 left-0 h-full min-w-full bg-black opacity-5 hover:opacity-[2.5%] rounded-lg'></div>
       )}
       <motion.img
         src={data.image}

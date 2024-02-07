@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 type LeftChevronProps = {
   decIndex: Function;
+  shown: 'visible' | 'invisible';
 };
 import useMediaQuery from '@/hooks/useMediaQuery';
 
-function LeftChevron({ decIndex }: LeftChevronProps) {
+function LeftChevron({ decIndex, shown }: LeftChevronProps) {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
@@ -14,7 +15,7 @@ function LeftChevron({ decIndex }: LeftChevronProps) {
       onClick={() => {
         decIndex();
       }}
-      className='cursor-pointer h-full flex justify-center items-center'
+      className={`${shown} cursor-pointer h-full flex justify-center items-center`}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
