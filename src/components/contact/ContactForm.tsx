@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactForm() {
   return (
-    <div className='flex lg:w-[45vw] md:w-[50vw] w-full bg-slate-200 p-6 rounded-xl shadow-lg'>
+    <div className='flex justify-center items-center lg:w-[45vw] md:w-[50vw] w-full bg-slate-200 p-6 rounded-xl shadow-lg'>
       <form
         className='w-full h-full flex flex-col gap-2'
         action='https://formsubmit.co/ro.mallick@gmail.com'
