@@ -1,8 +1,15 @@
 import Home from '@/components/about/Home';
+import Head from 'next/head';
 export default function Index() {
   return (
-    <main className={`overflow-scroll`}>
-      <Home />
-    </main>
+    <>
+      <Head>
+        <title>Rohit Mallick</title>
+        <meta name='description' content='Rohit Mallick home page' />
+      </Head>
+      <main className={`overflow-scroll`}>
+        <Home />
+      </main>
+    </>
   );
 }
