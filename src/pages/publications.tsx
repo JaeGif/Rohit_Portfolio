@@ -6,7 +6,6 @@ function Publications() {
     <>
       <Head>
         <title>Rohit Mallick | Publications</title>
-        <link rel='icon' href='/assets/images/bluetitle.ico'></link>
         <meta
           name='description'
           content='Rohit Mallicks work and publications'
