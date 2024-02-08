@@ -2,9 +2,6 @@ Author and Developer: Jacob Gifford
 Last Edited: Wednesday, February 7th, 2024
 With appreciation, Rohit
 
-If you want to edit the publications, you need to directly edit the publications.json file.
-URL: src/data/publications.json
-
 ### INSTALL FILES
 
 You need to have Node.js installed with the npm package manager
