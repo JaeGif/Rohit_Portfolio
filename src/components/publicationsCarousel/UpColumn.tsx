@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Publication from './Publication';
 import { PublicationType } from '@/types/data';
 import uniqid from 'uniqid';

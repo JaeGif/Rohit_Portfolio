@@ -45,7 +45,9 @@ function CarouselIndicator({
         data ? `h-[${options.vHeight}vh]` : 'h-full'
       } flex justify-around items-center`}
     >
-      {data && handleDecIndex && <LeftChevron decIndex={handleDecIndex} />}
+      {data && handleDecIndex && (
+        <LeftChevron shown='visible' decIndex={handleDecIndex} />
+      )}
       <span
         className={`flex h-full justify-center items-center ${
           data ? 'gap-4' : 'gap-1 sm:gap-2'
@@ -68,7 +70,9 @@ function CarouselIndicator({
                 )
             )}
       </span>
-      {data && handleIncIndex && <RightChevron incIndex={handleIncIndex} />}
+      {data && handleIncIndex && (
+        <RightChevron shown='visible' incIndex={handleIncIndex} />
+      )}
     </span>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import uniqid from 'uniqid';
 import Image from 'next/image';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 type OverProps = {
   data: { src: string }[];

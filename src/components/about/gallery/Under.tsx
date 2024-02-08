@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import uniqid from 'uniqid';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 type UnderProps = {
   data: { src: string }[];
   foreground: boolean;

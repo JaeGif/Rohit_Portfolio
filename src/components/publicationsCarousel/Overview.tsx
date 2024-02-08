@@ -1,7 +1,7 @@
 import { PublicationType } from '@/types/data';
 import React from 'react';
 import Publication from '../publications/Publication';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import uniqid from 'uniqid';
 type OverviewProps = {
   data: PublicationType;

@@ -1,6 +1,5 @@
 import { PublicationType } from '@/types/data';
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ArticleImage from './ArticleImage';
 import uniqid from 'uniqid';

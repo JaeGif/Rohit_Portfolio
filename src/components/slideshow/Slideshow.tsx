@@ -1,7 +1,6 @@
 import { PublicationType } from '@/types/data';
 import React, { useEffect, useState } from 'react';
 import CurrentSlide from './CurrentSlide';
-import Carousel from './Carousel';
 import CarouselIndicator from './CarouselIndicator';
 import useMediaQuery from '@/hooks/useMediaQuery';
 

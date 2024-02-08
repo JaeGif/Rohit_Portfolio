@@ -1,6 +1,5 @@
 import React from 'react';
 import LinkedinIcon from '../iconWrappers/LinkedinIcon';
-import GithubIcon from '../iconWrappers/GithubIcon';
 import GoogleScholar from '../iconWrappers/GoogleScholarIcon';
 function Socials() {
   return (

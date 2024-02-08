@@ -3,7 +3,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Navigation from './Navigation';
-import MobileNav from './MobileNav';
 import useMediaQuery from '@/hooks/useMediaQuery';
 function Header() {
   const router = useRouter();
