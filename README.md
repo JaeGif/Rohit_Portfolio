@@ -27,6 +27,8 @@ After you make any changes, run the site locally before committing to see if it 
 4. `git commit -a -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"`
 5. `git push origin main`
 
+# Specific details of how to perform each step below
+
 ### BEFORE MAKING ANY CHANGES
 
 Make sure your local repository is up to date by entering
@@ -34,7 +36,7 @@ Make sure your local repository is up to date by entering
 
 If this resolves without a hitch, continue to make any desired changes.
 
-### ADD A NEW ENTRY
+### ADD A NEW PUBLICATION ENTRY
 
 1. Place your thumbnail image\* in public/assets
 2. Open src/data/publictions.json
@@ -44,7 +46,7 @@ If this resolves without a hitch, continue to make any desired changes.
 
 - any normal image-type will work (even gifs), but jpg or webp is recommended for smaller file size and load times
 
-### DELETE AN ENTRY
+### DELETE A PUBLICATION ENTRY
 
 1. Delete the item from publications.json
 2. If you're permanently removing it, you should also delete the thumbnail image
@@ -62,18 +64,14 @@ To add new photos:
 4. Add a new entry to about.json (photos are rendered in order, so if you want a photo higher in the gallery reorder about.json)
 5. Entries follow the format: {"src": "URL"}, "URL" ===> "/assets/gallery/'FILENAME'" Every field except the laast field needs a comma after it.
 6. Save changes, run the site locally to make sure it looks how you'd like it to
-   FIELD TYPES
-   You can only edit publications.json with the correct field types. If you enter a number in a string field it will break
-   Types can be found at src/types/data.d.ts
-   The type file is READ ONLY
-   Do not edit the type file without consulting me first, the site will not compile
-   If you want to add new fields, that can be done, but multiple files will need changing so please consult me first
 
-# ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
+# FIELD TYPES
 
-### PUSH CHANGES LIVE
-
-Once you've made your local changes and it looks good, you'll need to commit the changes to GitHub for the changes to take effect in your live site.
+You can only edit publications.json with the correct field types. If you enter a number in a string field it will break
+Types can be found at src/types/data.d.ts
+The type file is READ ONLY
+Do not edit the type file without consulting me first, the site will not compile
+If you want to add new fields, that can be done, but multiple files will need changing so please consult me first
 
 # ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING!!!
 
