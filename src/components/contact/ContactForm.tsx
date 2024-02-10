@@ -9,6 +9,11 @@ function ContactForm() {
         method='POST'
       >
         <div className='flex flex-col'>
+          <input
+            name='_formsubmit_id'
+            type='text'
+            style={{ display: 'none' }}
+          />
           <label htmlFor='name'>Name</label>
           <input
             className='h-10 p-2 rounded-md bg-gray-50 shadow-sm'
@@ -34,7 +39,7 @@ function ContactForm() {
             className='resize-y h-24 min-h-[2.5rem] rounded-md p-2 bg-gray-50 shadow-sm'
             id='message'
             name='message'
-            required
+            required={true}
             maxLength={150}
             minLength={1}
           ></textarea>
