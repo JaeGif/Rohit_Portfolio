@@ -1,25 +1,6 @@
 {
   "publications": [
     {
-      "title": "The Pursuit of Happiness: The Power and Influence of AI Teammate Emotion in Human-AI Teamwork",
-      "publisher": "Behaviour & Information Technology",
-      "src": "https://doi.org/10.1080/0144929X.2023.2277909",
-      "year": 2023,
-      "reviewed": true,
-      "type": "Journal",
-      "authors": [
-        "Rohit Mallick",
-        "Christopher Flathmann",
-        "Caitlin Lancaster",
-        "Allyson Hauptman",
-        "Nathan McNeese",
-        "Guo Freeman"
-      ],
-      "featured": true,
-      "image": "/assets/papers/ThePursuitOfHappiness.jpg",
-      "abstract": "As the world evolves, human-AI teams (HAT) have become increasingly more capable in their ability to complete task objectives. Due to this rising importance, it has become essential to understand the interpersonal dynamism between humans and AI to further optimise their performance potential. Given the demonstrated utility of emotional communication within human-human team structures, this research investigates the nature of AI-sourced positive emotions on human teammates. Through 47 interviews, our findings show that for these AI teammates to be accepted, human teammates have preferences on understanding the emotional utility prior to its presentation, as well as which emotions are situationally acceptable. Also, findings show that integrating emotions within AI teammates has a positive influence on human perceptions and behaviour in a task. In further detail, emotions act as status updates that allow human teammates to not only better understand their teammates' mental states but also understand how their AI teammates perceive the situation around them. Together, this gives insight into how AI emotional expressions influence the perception of social support on the wider Human-AI team. Mainly how emotions can be used to increase acceptance of AI teammates and improve the overall experience human teammates have within the task."
-    },
-    {
       "title": "Examining the Impact of Varying Levels of AI Teammate Influence on Human-AI Teams",
       "publisher": "International Journal of Human-Computer Studies",
       "src": "https://doi.org/10.1016/j.ijhcs.2023.103061",
@@ -39,7 +20,7 @@
       "abstract": "The implementation of AI teammates is creating a wealth of research that examines how AI teammates impact human-AI teams. However, AI teammates themselves are not static, and their roles and responsibilities in human-AI teams are likely to change as technologies advance in the coming years. As a result of this advancement, AI teammates will gain influence in teams, which refers to their ability to change and manipulate a team’s shared resources. This study uses a mixed-methods experiment to examine how the amount of influence AI teammates have on a team’s shared resources can impact the team outcomes of human teammate performance, teammate perceptions, and whole-team perception. Results indicate that AI teammates that increase their influence on shared resources over time can stagnate the improvement of human performance, but AI teammates that decrease their influence on shared resources can actually encourage humans to improve their own performance. Additionally, AI teammates that are highly influential on shared resources can make humans perceive a greater cognitive workload. However, qualitative results indicate that these impacts on human performance and perception do not consistently impact the acceptance humans form for AI teammates. Rather, humans form acceptance for AI teammates if said AI use its influence to manipulate resources to benefit the personal goals of human teammates. These results have critical implications for human-AI teaming as it shows that the influence AI teammates have on shared resources can be designed in a way that improves human performance. However, future research is going to need to focus more critically on how the personal goals humans have, which may not align with a team’s overall goals, are going to mediate the effectiveness of the AI teammate influence."
     },
     {
-      "title": "Let’s Think Together! Assessing Shared Mental Models, Performance, and Trust in Human-Agent Teams",
+      "title": "Let's Think Together! Assessing Shared Mental Models, Performance, and Trust in Human-Agent Teams",
       "publisher": "Proceedings of the ACM on Human-Computer Interaction",
       "src": "https://doi.org/10.1145/3492832",
       "year": 2022,
@@ -94,6 +75,25 @@
       "featured": true,
       "image": "/assets/papers/BalancingTheScales.jpg",
       "abstract": "With the progressive nature of Human-Agent Teams becoming more and more useful for high-quality work output, there is a proportional need for bi-directional communication between teammates to increase efficient collaboration. This need is centered around the well-known issue of innate mistrust between humans and artificial intelligence, resulting in sub-optimal work. To combat this, computer scientists and humancomputer interaction researchers alike have presented and refined specific solutions to this issue through different methods of AI interpretability. These different methods include explicit AI explanations as well as implicit manipulations of the AI interface, otherwise known as AI transparency. Individually these solutions hold considerable merit in repairing the relationship of trust between teammates, but also have individual flaws. We posit that the combination of different interpretable mechanisms mitigates each other’s flaws and extenuates their strengths within human-agent teams."
+    },
+    {
+      "title": "The Pursuit of Happiness: The Power and Influence of AI Teammate Emotion in Human-AI Teamwork",
+      "publisher": "Behaviour & Information Technology",
+      "src": "https://doi.org/10.1080/0144929X.2023.2277909",
+      "year": 2023,
+      "reviewed": true,
+      "type": "Journal",
+      "authors": [
+        "Rohit Mallick",
+        "Christopher Flathmann",
+        "Caitlin Lancaster",
+        "Allyson Hauptman",
+        "Nathan McNeese",
+        "Guo Freeman"
+      ],
+      "featured": true,
+      "image": "/assets/papers/ThePursuitOfHappiness.jpg",
+      "abstract": "As the world evolves, human-AI teams (HAT) have become increasingly more capable in their ability to complete task objectives. Due to this rising importance, it has become essential to understand the interpersonal dynamism between humans and AI to further optimise their performance potential. Given the demonstrated utility of emotional communication within human-human team structures, this research investigates the nature of AI-sourced positive emotions on human teammates. Through 47 interviews, our findings show that for these AI teammates to be accepted, human teammates have preferences on understanding the emotional utility prior to its presentation, as well as which emotions are situationally acceptable. Also, findings show that integrating emotions within AI teammates has a positive influence on human perceptions and behaviour in a task. In further detail, emotions act as status updates that allow human teammates to not only better understand their teammates' mental states but also understand how their AI teammates perceive the situation around them. Together, this gives insight into how AI emotional expressions influence the perception of social support on the wider Human-AI team. Mainly how emotions can be used to increase acceptance of AI teammates and improve the overall experience human teammates have within the task."
     },
     {
       "title": "Human-AI teams in complex military operations: Soldiers’ perception of intelligent AI agents as teammates in human-AI teams",
