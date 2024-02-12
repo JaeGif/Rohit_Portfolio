@@ -9,7 +9,7 @@ function Footer() {
       </div>
       <div className='flex justify-center items-center gap-2 p-5'>
         <em className='text-sm text-gray-600'>
-          &#169; {new Date().getFullYear()} Jacob Gifford
+          &#169; {new Date().getFullYear()} Designed and built by Jacob Gifford
         </em>
         <a href='https://github.com/JaeGif' rel='noreferrer' target='_blank'>
           <GithubIcon height={16} />
