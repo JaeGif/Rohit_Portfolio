@@ -33,7 +33,7 @@ function PersonalDescription() {
         </div>
         <Image
           className='md:w-1/3 w-full'
-          src={'/assets/rohit.jpg'}
+          src={'/assets/gallery/15.jpg'}
           alt='rohit'
           height={300}
           width={300}
