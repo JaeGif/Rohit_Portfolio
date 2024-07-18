@@ -32,6 +32,16 @@ Make sure your local repository is up to date by entering
 `git pull` in your terminal.
 
 If this resolves without a hitch, continue to make any desired changes.
+### ADD NEW COLLABORATORS OR SPONSORS
+1. Place your collaborator or sponsor logo\* in public/assets
+2. Open src/data/collaborators.json or src/data/sponsorships.json depending on whi9ch you're editing
+3. Copy/Paste a previous entry, edit the fields appropriately for your new entry
+4. Save the file
+5. Check local site before commiting
+
+_Notes: Collaborators and sponsors are mapped in the order you enter them in the .json file. If you want to change the order, move the entries in the .json file appropriately_
+
+\* any normal image-type will work (even gifs), but jpg or webp is recommended for smaller file sizes and load times
 
 ### ADD A NEW PUBLICATION ENTRY
 
@@ -41,7 +51,7 @@ If this resolves without a hitch, continue to make any desired changes.
 4. Save the file
 5. Check local site before committing
 
-- any normal image-type will work (even gifs), but jpg or webp is recommended for smaller file size and load times
+\* any normal image-type will work (even gifs), but jpg or webp is recommended for smaller file sizes and load times
 
 ### DELETE A PUBLICATION ENTRY
 
