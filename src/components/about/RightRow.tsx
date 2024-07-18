@@ -15,19 +15,20 @@ function RightRow({ data }: RightRowProps) {
     if (ref.current) setWidth(ref.current.clientWidth);
     setWindowWidth(window.innerWidth);
   }, []);
+  const randomVal = Math.random();
 
   return (
     <div className='flex overflow-hidden w-screen items-center pl-5 '>
       <div
         ref={ref}
-        className='flex md:gap-20 gap-10 justify-center items-center'
+        className='flex sm:gap-15 md:gap-20 gap-10 justify-center items-center'
       >
         {data.map((img) => (
           <motion.div
             animate={{ x: windowWidth - width - 20 }}
             transition={{
               ease: 'linear',
-              duration: 8 - data.length,
+              duration: 8 + randomVal * 5,
               repeat: Infinity,
               repeatType: 'reverse',
             }}
