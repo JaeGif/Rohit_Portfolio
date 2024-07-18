@@ -7,7 +7,7 @@ export default function Index() {
         <title>Rohit Mallick</title>
         <meta name='description' content='Rohit Mallick home page' />
       </Head>
-      <main className={`overflow-scroll`}>
+      <main className={`overflow-x-hidden`}>
         <Home />
       </main>
     </>
