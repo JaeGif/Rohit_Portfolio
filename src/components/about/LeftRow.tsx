@@ -20,7 +20,7 @@ function LeftRow({ data }: LeftRowProps) {
     <div className='flex overflow-hidden w-screen justify-end items-center pr-5'>
       <div
         ref={ref}
-        className='flex md:gap-40 gap-10 justify-center items-center'
+        className='flex md:gap-20 gap-10 justify-center items-center'
       >
         {data.map((img) => (
           <motion.div

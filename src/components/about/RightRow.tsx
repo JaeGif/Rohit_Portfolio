@@ -20,7 +20,7 @@ function RightRow({ data }: RightRowProps) {
     <div className='flex overflow-hidden w-screen items-center pl-5 '>
       <div
         ref={ref}
-        className='flex md:gap-40 gap-10 justify-center items-center'
+        className='flex md:gap-20 gap-10 justify-center items-center'
       >
         {data.map((img) => (
           <motion.div
