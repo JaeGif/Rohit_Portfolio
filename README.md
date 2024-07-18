@@ -34,7 +34,7 @@ Make sure your local repository is up to date by entering
 If this resolves without a hitch, continue to make any desired changes.
 ### ADD NEW COLLABORATORS OR SPONSORS
 1. Place your collaborator or sponsor logo\* in public/assets
-2. Open src/data/collaborators.json or src/data/sponsorships.json depending on whi9ch you're editing
+2. Open src/data/collaborators.json or src/data/sponsorships.json depending on which you're editing
 3. Copy/Paste a previous entry, edit the fields appropriately for your new entry
 4. Save the file
 5. Check local site before commiting
