@@ -21,6 +21,7 @@ After you have Node installed:
 1. `git pull`
 2. make changes
 3. `npm run dev` (view changes locally)
+## NOTE: if adding files do $ git add file_path
 4. `git commit -a -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"`
 5. `git push origin main`
 
@@ -83,6 +84,10 @@ If you want to add new fields, that can be done, but multiple files will need ch
 ### PUSH CHANGES LIVE
 
 #### ALWAYS VIEW SITE LOCALLY BEFORE COMMITTING
+
+If adding files write the following in the terminal
+
+`git add file_path`
 
 Commit using the commands in the terminal
 
