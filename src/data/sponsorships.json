@@ -1,7 +1,10 @@
 {
   "sponsorships": [
-    { "src": "/assets/home/ccdc.png", "title": "CCDC" },
+    { "src": "/assets/home/NSF.svg", "title": "NSF" },
+    { "src": "/assets/home/afosr.png", "title": "AFOSR" },
+    { "src": "/assets/home/ara.png", "title": "ARA" },
     { "src": "/assets/home/onr.png", "title": "ONR" },
+    { "src": "/assets/home/ccdc.png", "title": "CCDC" },
     { "src": "/assets/home/ORISE.svg", "title": "ORISE" }
   ]
 }
