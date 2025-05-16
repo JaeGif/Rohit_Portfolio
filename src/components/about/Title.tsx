@@ -2,9 +2,11 @@ import React from 'react';
 
 function Title() {
   return (
-    <p className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400 pl-2'>
-      Ph.D. Candidate. Human-Centered Computing, Clemson University
-    </p>
+    <>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Research Scientist & Project Manager</span>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>TRACE Research Group</span>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Human-Centered Computing, School of Computing, Clemson University</span>
+    </>
   );
 }
 

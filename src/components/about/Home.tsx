@@ -10,7 +10,7 @@ function Home() {
     <div className='flex flex-col justify-center items-center w-screen'>
       <div className='h-screen w-screen flex items-center flex-col-reverse md:flex-row justify-evenly'>
         <div className='flex flex-col justify-center items-center gap-2'>
-          <div className='flex flex-col justify-center items-center w-60 sm:w-72'>
+          <div className='flex flex-col justify-center items-center w-full sm:w-[450px] p-2 gap-2'>
             <Name />
             <Title />
           </div>

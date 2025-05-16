@@ -2,7 +2,8 @@
   "collaborators": [
     { "src": "/assets/home/purdueLogo.png", "title": "Purdue" },
     { "src": "/assets/home/clemson.png", "title": "Clemson" },
-    { "src": "/assets/home/Trace.png", "title": "Trace Lab" },
-    { "src": "/assets/home/arl.png", "title": "Army Research Laboratory" }
+    { "src": "/assets/home/Trace.png", "title": "TRACE Lab" },
+    { "src": "/assets/home/arl.png", "title": "Army Research Laboratory" },
+    { "src": "/assets/home/cu-chai logo.svg", "title": "Clemson University Center for Human-AI Interaction, Collaboration, and Teaming"}
   ]
 }
