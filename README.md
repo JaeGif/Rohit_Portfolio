@@ -1,5 +1,5 @@
 Author and Developer: Jacob Gifford
-Last Edited: Wednesday, July 18th, 2024
+Last Edited: Tuesday, November 11th, 2025
 With appreciation, Rohit
 
 ### INSTALL FILES
@@ -80,6 +80,11 @@ Types can be found at src/types/data.d.ts
 The type file is READ ONLY.
 Do not edit the type file without consulting me first, the site will not compile.
 If you want to add new fields, that can be done, but multiple files will need changing so please consult me first.
+
+### Update CV
+Name is located : 
+/Users/rohitmallick/Documents/GitHub/Rohit_Portfolio/src/components/about/AboutLinks.tsx
+
 
 ### PUSH CHANGES LIVE
 

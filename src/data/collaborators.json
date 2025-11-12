@@ -4,6 +4,7 @@
     { "src": "/assets/home/clemson.png", "title": "Clemson" },
     { "src": "/assets/home/Trace.png", "title": "TRACE Lab" },
     { "src": "/assets/home/arl.png", "title": "Army Research Laboratory" },
-    { "src": "/assets/home/cu-chai logo.svg", "title": "Clemson University Center for Human-AI Interaction, Collaboration, and Teaming"}
+    { "src": "/assets/home/cu-chai logo.svg", "title": "Clemson University Center for Human-AI Interaction, Collaboration, and Teaming"},
+    { "src": "/assets/home/UMD_logo.png", "title": "University of Maryland, College Park"}
   ]
 }

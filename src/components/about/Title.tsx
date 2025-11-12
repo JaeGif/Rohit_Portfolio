@@ -3,9 +3,9 @@ import React from 'react';
 function Title() {
   return (
     <>
-      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Research Scientist & Project Manager</span>
-      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>TRACE Research Group</span>
-      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Human-Centered Computing, School of Computing, Clemson University</span>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Postdoctoral Research Associate</span>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>Organizational Teams & Technology Research Society</span>
+      <span className='text-center text-base sm:text-left sm:text-lg text-wrap w-full text-blue-400'>College of Information, University of Maryland</span>
     </>
   );
 }
