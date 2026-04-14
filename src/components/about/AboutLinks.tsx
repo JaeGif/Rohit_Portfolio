@@ -5,7 +5,7 @@ import Link from 'next/link';
 function AboutLinks() {
   return (
     <nav className='flex justify-center gap-2'>
-      <a href='/assets/RohitMallick_CV_11-13-2025.pdf' target='_blank'>
+      <a href='/assets/RohitMallick_CV_2026-04-14.pdf' target='_blank'>
         <motion.button
           whileHover={{ scale: 1.05 }}
           className='flex justify-center items-center gap-2 p-2 rounded-md hover:border-blue-400'
